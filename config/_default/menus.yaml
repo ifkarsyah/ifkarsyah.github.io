@@ -36,3 +36,6 @@ main:
   - name: PostgreSQL
     url: /tutorial-postgresql
     parent: tutorial
+  - name: Blog
+    url: /blogs
+    weight: 70  
