@@ -5,7 +5,7 @@ pubDate: 2024-01-28
 author: "ifkarsyah"
 tags: ["Spark", "Data Engineering", "Streaming", "Big Data"]
 image:
-  src: /blog/spark-series.png
+  src: ./spark-series.png
   alt: "Apache Spark Structured Streaming"
 ---
 

@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import BaseLayout from './BaseLayout.astro';
 import TagList from '../components/TagList.astro';
 
@@ -9,7 +11,7 @@ interface Props {
     pubDate: string;
     author?: string;
     tags: string[];
-    image?: { src: string; alt: string };
+    image?: { src: ImageMetadata; alt: string };
   };
 }
 
@@ -37,7 +39,7 @@ const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('en-US', 
 
     {frontmatter.image && (
       <div class="post-image">
-        <img src={frontmatter.image.src} alt={frontmatter.image.alt} />
+        <Image src={frontmatter.image.src} alt={frontmatter.image.alt} width={900} height={280} />
       </div>
     )}
 

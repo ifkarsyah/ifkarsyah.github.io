@@ -5,7 +5,7 @@ pubDate: 2024-01-10
 author: "ifkarsyah"
 tags: ["ClickHouse", "SQL", "Data Platform"]
 image:
-  src: /blog/clickhouse.png
+  src: ./clickhouse.png
   alt: "ClickHouse"
 ---
 

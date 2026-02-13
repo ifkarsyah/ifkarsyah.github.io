@@ -15,14 +15,14 @@ const projects = defineCollection({
 
 const blog = defineCollection({
   type: 'content',
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
     author: z.string().optional(),
     tags: z.array(z.string()),
     image: z.object({
-      src: z.string(),
+      src: image(),
       alt: z.string(),
     }).optional(),
   }),

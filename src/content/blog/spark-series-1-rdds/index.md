@@ -5,7 +5,7 @@ pubDate: 2024-01-14
 author: "ifkarsyah"
 tags: ["Spark", "Data Engineering", "Big Data"]
 image:
-  src: /blog/spark-series.png
+  src: ./spark-series.png
   alt: "Apache Spark RDDs"
 ---
 

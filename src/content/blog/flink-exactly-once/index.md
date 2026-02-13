@@ -5,7 +5,7 @@ pubDate: 2023-11-20
 author: "ifkarsyah"
 tags: ["Apache Flink", "Streaming", "Data Platform"]
 image:
-  src: /blog/flink.png
+  src: ./flink.png
   alt: "Apache Flink"
 ---
 

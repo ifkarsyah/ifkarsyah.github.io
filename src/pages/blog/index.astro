@@ -29,7 +29,7 @@ const allYears = [...new Set(posts.map(p => String(new Date(p.data.pubDate).getF
           description={post.data.description}
           pubDate={post.data.pubDate}
           tags={post.data.tags}
-          slug={post.id.replace('.md', '')}
+          slug={post.id.replace('/index.md', '')}
           image={post.data.image}
         />
       </div>

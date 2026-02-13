@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
 interface Props {
   title: string;
   description: string;
@@ -6,7 +9,7 @@ interface Props {
   tags: string[];
   slug: string;
   author?: string;
-  image?: { src: string; alt: string };
+  image?: { src: ImageMetadata; alt: string };
 }
 
 const { title, description, pubDate, tags, slug, author, image } = Astro.props;
@@ -19,7 +22,7 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
 ---
 
 <a href={`/blog/${slug}`} class="card blog-card">
-  {image && <img src={image.src} alt={image.alt} class="card-image" />}
+  {image && <Image src={image.src} alt={image.alt} class="card-image" width={600} height={180} />}
   <div class="card-meta">
     <time datetime={new Date(pubDate).toISOString()}>{formattedDate}</time>
 

@@ -13,11 +13,11 @@ const featuredProjects = Object.entries(projectFiles)
   .sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime())
   .slice(0, 3);
 
-const postFiles = import.meta.glob('../content/blog/*.md', { eager: true });
+const postFiles = import.meta.glob('../content/blog/**/index.md', { eager: true });
 const recentPosts = Object.entries(postFiles)
   .map(([path, mod]: [string, any]) => ({
     ...mod.frontmatter,
-    slug: path.split('/').pop()!.replace('.md', ''),
+    slug: path.split('/').slice(-2, -1)[0],
   }))
   .sort((a: any, b: any) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime())
   .slice(0, 3);

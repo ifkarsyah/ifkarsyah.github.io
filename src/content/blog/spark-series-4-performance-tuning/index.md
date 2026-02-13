@@ -5,7 +5,7 @@ pubDate: 2024-02-04
 author: "ifkarsyah"
 tags: ["Spark", "Data Engineering", "Performance", "Big Data"]
 image:
-  src: /blog/spark-series.png
+  src: ./spark-series.png
   alt: "Apache Spark Performance Tuning"
 ---
 
