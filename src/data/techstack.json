@@ -1,0 +1,34 @@
+{
+  "languages": [
+    { "name": "Go", "icon": "🐹", "level": "Expert" },
+    { "name": "TypeScript", "icon": "📘", "level": "Advanced" },
+    { "name": "Python", "icon": "🐍", "level": "Intermediate" },
+    { "name": "SQL", "icon": "🗄️", "level": "Advanced" },
+    { "name": "Bash", "icon": "🖥️", "level": "Intermediate" }
+  ],
+  "frontend": [
+    { "name": "React", "icon": "⚛️", "level": "Advanced" },
+    { "name": "Astro", "icon": "🚀", "level": "Intermediate" },
+    { "name": "TypeScript", "icon": "📘", "level": "Advanced" },
+    { "name": "CSS", "icon": "🎨", "level": "Intermediate" }
+  ],
+  "backend": [
+    { "name": "Go / Gin", "icon": "🐹", "level": "Expert" },
+    { "name": "Node.js", "icon": "💚", "level": "Advanced" },
+    { "name": "REST APIs", "icon": "🔌", "level": "Expert" },
+    { "name": "gRPC", "icon": "📡", "level": "Intermediate" }
+  ],
+  "databases": [
+    { "name": "PostgreSQL", "icon": "🐘", "level": "Advanced" },
+    { "name": "MySQL", "icon": "🐬", "level": "Advanced" },
+    { "name": "Redis", "icon": "🔴", "level": "Intermediate" },
+    { "name": "MongoDB", "icon": "🍃", "level": "Beginner" }
+  ],
+  "tools": [
+    { "name": "Docker", "icon": "🐳", "level": "Advanced" },
+    { "name": "Kubernetes", "icon": "☸️", "level": "Intermediate" },
+    { "name": "Git", "icon": "🌿", "level": "Expert" },
+    { "name": "GitHub Actions", "icon": "⚙️", "level": "Advanced" },
+    { "name": "Linux", "icon": "🐧", "level": "Advanced" }
+  ]
+}

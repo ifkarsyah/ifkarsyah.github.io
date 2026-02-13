@@ -1,0 +1,116 @@
+---
+interface TechItem {
+  name: string;
+  icon: string;
+  level?: string;
+}
+
+interface Props {
+  categories: Record<string, TechItem[]>;
+}
+
+const { categories } = Astro.props;
+
+const categoryLabels: Record<string, string> = {
+  languages: 'Languages',
+  frontend: 'Frontend',
+  backend: 'Backend',
+  databases: 'Databases',
+  tools: 'Tools & DevOps',
+};
+---
+
+<div class="techstack">
+  {Object.entries(categories).map(([key, items]) => (
+    <div class="techstack-category">
+      <h4 class="techstack-category-title">{categoryLabels[key] ?? key}</h4>
+      <div class="techstack-grid">
+        {items.map(item => (
+          <div class="techstack-item">
+            <span class="techstack-icon">{item.icon}</span>
+            <span class="techstack-name">{item.name}</span>
+            {item.level && <span class={`techstack-level level-${item.level.toLowerCase()}`}>{item.level}</span>}
+          </div>
+        ))}
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  .techstack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .techstack-category-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  .techstack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .techstack-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.45rem 0.85rem;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    transition: border-color var(--transition);
+  }
+
+  .techstack-item:hover {
+    border-color: var(--border-hover);
+  }
+
+  .techstack-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  .techstack-name {
+    font-weight: 500;
+  }
+
+  .techstack-level {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.1rem 0.4rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .level-expert {
+    background: rgba(0, 217, 255, 0.2);
+    color: var(--accent);
+  }
+
+  .level-advanced {
+    background: rgba(52, 211, 153, 0.2);
+    color: #34d399;
+  }
+
+  .level-intermediate {
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+  }
+
+  .level-beginner {
+    background: rgba(168, 178, 193, 0.15);
+    color: var(--text-secondary);
+  }
+</style>

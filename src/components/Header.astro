@@ -5,17 +5,11 @@ import ThemeIcon from './ThemeIcon.astro';
 ---
 <header>
   <nav>
-    <div>
+    <a href="/" class="nav-brand">ifkarsyah</a>
+    <div class="nav-right">
+      <Navigation />
       <ThemeIcon />
       <Menu />
     </div>
-    <Navigation />
   </nav>
 </header>
-
-<style>
-  div {
-    display: flex;
-    justify-content: space-between;
-  }
-</style>

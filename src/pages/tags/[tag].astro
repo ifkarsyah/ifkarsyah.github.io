@@ -1,19 +1,81 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import BlogCard from '../../components/BlogCard.astro';
 
 export async function getStaticPaths() {
-  return [
-    { params: { tag: "astro" } },
-    { params: { tag: "successes" } },
-    { params: { tag: "community" } },
-    { params: { tag: "blogging" } },
-    { params: { tag: "setbacks" } },
-    { params: { tag: "learning in public" } },
-  ];
+  const projectFiles = import.meta.glob('../../content/projects/*.md', { eager: true });
+  const postFiles = import.meta.glob('../../content/blog/*.md', { eager: true });
+
+  const projects = Object.entries(projectFiles).map(([path, mod]: [string, any]) => ({
+    ...mod.frontmatter,
+    slug: path.split('/').pop()!.replace('.md', ''),
+  }));
+
+  const posts = Object.entries(postFiles).map(([path, mod]: [string, any]) => ({
+    ...mod.frontmatter,
+    slug: path.split('/').pop()!.replace('.md', ''),
+  }));
+
+  const projectTags = projects.flatMap((p: any) => p.tags ?? []);
+  const postTags = posts.flatMap((p: any) => p.tags ?? []);
+  const uniqueTags = [...new Set([...projectTags, ...postTags])];
+
+  return uniqueTags.map(tag => ({
+    params: { tag },
+    props: {
+      tag,
+      filteredProjects: projects.filter((p: any) => p.tags?.includes(tag)),
+      filteredPosts: posts
+        .filter((p: any) => p.tags?.includes(tag))
+        .sort((a: any, b: any) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()),
+    },
+  }));
 }
 
-const { tag } = Astro.params;
+const { tag, filteredProjects, filteredPosts } = Astro.props;
+const total = filteredProjects.length + filteredPosts.length;
 ---
-<BaseLayout pageTitle={tag}>
-  <p>Posts tagged with {tag}</p>
+
+<BaseLayout pageTitle={`#${tag}`} description={`Content tagged with ${tag}`}>
+  <div class="page-header">
+    <h1><span class="text-muted" style="font-weight: 400;">#</span>{tag}</h1>
+    <p>{total} {total === 1 ? 'item' : 'items'} tagged with <strong style="color: var(--text-primary);">{tag}</strong></p>
+  </div>
+
+  {filteredProjects.length > 0 && (
+    <section class="section">
+      <p class="section-title">Projects</p>
+      <div class="cards-grid">
+        {filteredProjects.map((project: any) => (
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            slug={project.slug}
+            featured={project.featured}
+            link={project.link}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {filteredPosts.length > 0 && (
+    <section class="section">
+      <p class="section-title">Blog Posts</p>
+      <div class="cards-grid">
+        {filteredPosts.map((post: any) => (
+          <BlogCard
+            title={post.title}
+            description={post.description}
+            pubDate={post.pubDate}
+            tags={post.tags}
+            slug={post.slug}
+            author={post.author}
+          />
+        ))}
+      </div>
+    </section>
+  )}
 </BaseLayout>

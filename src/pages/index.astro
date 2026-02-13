@@ -1,9 +1,156 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Greeting from '../components/Greeting';
-const pageTitle = "Home Page";
+import ProjectCard from '../components/ProjectCard.astro';
+import BlogCard from '../components/BlogCard.astro';
+
+const projectFiles = import.meta.glob('../content/projects/*.md', { eager: true });
+const featuredProjects = Object.entries(projectFiles)
+  .map(([path, mod]: [string, any]) => ({
+    ...mod.frontmatter,
+    slug: path.split('/').pop()!.replace('.md', ''),
+  }))
+  .filter((p: any) => p.featured)
+  .sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  .slice(0, 3);
+
+const postFiles = import.meta.glob('../content/blog/*.md', { eager: true });
+const recentPosts = Object.entries(postFiles)
+  .map(([path, mod]: [string, any]) => ({
+    ...mod.frontmatter,
+    slug: path.split('/').pop()!.replace('.md', ''),
+  }))
+  .sort((a: any, b: any) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime())
+  .slice(0, 3);
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+
+<BaseLayout pageTitle="Home" description="ifkarsyah — Software Engineer specializing in Go, distributed systems, and backend engineering.">
+
+  <!-- Hero -->
+  <section class="hero">
+    <p class="hero-label">Hey, I'm</p>
+    <h1 class="hero-name">ifkarsyah</h1>
+    <p class="hero-subtitle">Software Engineer focused on backend systems, distributed infrastructure, and developer tooling. I write Go, think in systems, and occasionally blog about it.</p>
+    <div class="hero-cta">
+      <a href="/projects/" class="btn btn-primary">View Projects</a>
+      <a href="/blog/" class="btn btn-outline">Read Blog</a>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  {featuredProjects.length > 0 && (
+    <section class="section">
+      <div class="section-header">
+        <p class="section-title">Featured Projects</p>
+        <a href="/projects/" class="section-link">All projects →</a>
+      </div>
+      <div class="cards-grid">
+        {featuredProjects.map((project: any) => (
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            slug={project.slug}
+            featured={project.featured}
+            link={project.link}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Recent Posts -->
+  {recentPosts.length > 0 && (
+    <section class="section">
+      <div class="section-header">
+        <p class="section-title">Recent Posts</p>
+        <a href="/blog/" class="section-link">All posts →</a>
+      </div>
+      <div class="cards-grid">
+        {recentPosts.map((post: any) => (
+          <BlogCard
+            title={post.title}
+            description={post.description}
+            pubDate={post.pubDate}
+            tags={post.tags}
+            slug={post.slug}
+            author={post.author}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
 </BaseLayout>
+
+<style>
+  /* Hero */
+  .hero {
+    padding: 3rem 0 3.5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem;
+  }
+
+  .hero-label {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-name {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 55ch;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  /* Section header with link */
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+
+  .section-header .section-title {
+    margin-bottom: 0;
+  }
+
+  .section-link {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    transition: color var(--transition);
+  }
+
+  .section-link:hover {
+    color: var(--accent);
+    opacity: 1;
+  }
+
+  @media (max-width: 640px) {
+    .hero-name {
+      font-size: 2.25rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  }
+</style>

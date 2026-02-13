@@ -1,0 +1,23 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+
+export async function getStaticPaths() {
+  const postFiles = import.meta.glob('../../content/blog/*.md');
+  const entries = await Promise.all(
+    Object.entries(postFiles).map(async ([path, load]) => {
+      const mod = await load() as any;
+      return {
+        params: { slug: path.split('/').pop()!.replace('.md', '') },
+        props: { frontmatter: mod.frontmatter, Content: mod.default },
+      };
+    })
+  );
+  return entries;
+}
+
+const { frontmatter, Content } = Astro.props;
+---
+
+<BlogLayout frontmatter={frontmatter}>
+  <Content />
+</BlogLayout>

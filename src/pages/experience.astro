@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ExperienceItem from '../components/ExperienceItem.astro';
+import experiences from '../data/experiences.json';
+---
+
+<BaseLayout pageTitle="Experience" description="My work experience and education history.">
+  <div class="page-header">
+    <h1>Experience</h1>
+    <p>My professional journey and educational background.</p>
+  </div>
+
+  <div class="timeline">
+    {experiences.map((exp: any) => (
+      <ExperienceItem
+        title={exp.title}
+        company={exp.company}
+        type={exp.type}
+        startDate={exp.startDate}
+        endDate={exp.endDate}
+        description={exp.description}
+        bullets={exp.bullets}
+        tags={exp.tags}
+      />
+    ))}
+  </div>
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  tags: string[];
+  slug: string;
+  featured?: boolean;
+  link?: string;
+}
+
+const { title, description, tags, slug, featured, link } = Astro.props;
+---
+
+<a href={`/projects/${slug}`} class="card project-card">
+  <div class="card-header">
+    <h3 class="card-title">{title}</h3>
+    {featured && <span class="badge-featured">Featured</span>}
+  </div>
+  <p class="card-description">{description}</p>
+  <div class="card-footer">
+    <div class="tags">
+      {tags.slice(0, 4).map(tag => (
+        <span class="tag">{tag}</span>
+      ))}
+    </div>
+    {link && <span class="card-link-icon" title="View project">↗</span>}
+  </div>
+</a>

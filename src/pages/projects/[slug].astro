@@ -1,0 +1,23 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+
+export async function getStaticPaths() {
+  const projectFiles = import.meta.glob('../../content/projects/*.md');
+  const entries = await Promise.all(
+    Object.entries(projectFiles).map(async ([path, load]) => {
+      const mod = await load() as any;
+      return {
+        params: { slug: path.split('/').pop()!.replace('.md', '') },
+        props: { frontmatter: mod.frontmatter, Content: mod.default },
+      };
+    })
+  );
+  return entries;
+}
+
+const { frontmatter, Content } = Astro.props;
+---
+
+<ProjectLayout frontmatter={frontmatter}>
+  <Content />
+</ProjectLayout>

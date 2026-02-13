@@ -1,61 +1,137 @@
 ---
-import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-
-const pageTitle = "About Me";
-
-const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
-};
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
-
-const happy = true;
-const finished = false;
-const goal = 3;
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TechStackGrid from '../components/TechStackGrid.astro';
+import techstack from '../data/techstack.json';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Header />
+<BaseLayout pageTitle="About" description="About ifkarsyah — software engineer, Go enthusiast, distributed systems nerd.">
+  <div class="page-header">
+    <h1>About Me</h1>
+    <p>Software engineer, open source contributor, and distributed systems enthusiast.</p>
+  </div>
 
-		<h1>{pageTitle}</h1>
-		<h2>... and my new Astro site!</h2>
+  <!-- Bio -->
+  <section class="section">
+    <p class="section-title">Who I Am</p>
+    <div class="bio">
+      <p>
+        Hi, I'm <strong style="color: var(--text-primary);">ifkarsyah</strong> — a software engineer who loves building reliable, high-performance backend systems.
+        I spend most of my time writing Go, designing APIs, and thinking about how to make distributed systems that actually work.
+      </p>
+      <p>
+        I'm particularly interested in the intersection of performance and correctness — systems that are both fast and provably right.
+        When I'm not coding, I'm likely reading papers on distributed systems, contributing to open source, or tinkering with side projects.
+      </p>
+      <p>
+        I believe in writing software that's simple, well-tested, and easy to reason about. Complexity is the enemy of reliability.
+      </p>
+      <div style="margin-top: 1.25rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <a href="/experience/" class="btn btn-outline">View Experience</a>
+        <a href="mailto:hello@ifkarsyah.me" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
 
-		<p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+  <hr class="divider" />
 
-		<p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+  <!-- Tech Stack -->
+  <section class="section">
+    <p class="section-title">Tech Stack</p>
+    <TechStackGrid categories={techstack} />
+  </section>
 
-		<p>Here are a few facts about me:</p>
-			<ul>
-				<li>My name is {identity.firstName}.</li>
-				<li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-				{identity.hobbies.length >= 2 &&
-					<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-				}
-			</ul>
-			<p>My skills are:</p>
-			<ul>
-				{skills.map((skill) => <li class="skill">{skill}</li>)}
-			</ul>
+  <hr class="divider" />
 
-			{happy && <p>I am happy to be learning Astro!</p>}
+  <!-- What I'm interested in -->
+  <section class="section">
+    <p class="section-title">Interests</p>
+    <div class="interests-grid">
+      <div class="interest-item">
+        <span class="interest-icon">⚡</span>
+        <div>
+          <h3>Performance Engineering</h3>
+          <p>Profiling, benchmarking, and optimizing systems to their physical limits.</p>
+        </div>
+      </div>
+      <div class="interest-item">
+        <span class="interest-icon">🌐</span>
+        <div>
+          <h3>Distributed Systems</h3>
+          <p>Consensus algorithms, replication, fault tolerance, and the CAP theorem.</p>
+        </div>
+      </div>
+      <div class="interest-item">
+        <span class="interest-icon">🔧</span>
+        <div>
+          <h3>Developer Tooling</h3>
+          <p>Building CLI tools and developer experiences that make engineers more productive.</p>
+        </div>
+      </div>
+      <div class="interest-item">
+        <span class="interest-icon">📖</span>
+        <div>
+          <h3>Open Source</h3>
+          <p>Contributing to the ecosystem and building tools the community can rely on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			{finished && <p>I finished this tutorial!</p>}
+  <hr class="divider" />
 
-			{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-		<Footer />
-	</body>
-</html>
+  <!-- Contact -->
+  <section class="section">
+    <p class="section-title">Get in Touch</p>
+    <p>I'm always open to interesting conversations, collaborations, or job opportunities. Feel free to reach out.</p>
+    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem;">
+      <a href="mailto:hello@ifkarsyah.me" class="btn btn-primary">Email Me</a>
+      <a href="https://github.com/ifkarsyah" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+      <a href="https://twitter.com/ifkarsyah" target="_blank" rel="noopener" class="btn btn-outline">Twitter</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .bio p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  .interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .interest-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.1rem;
+  }
+
+  .interest-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 0.1rem;
+  }
+
+  .interest-item h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+    color: var(--text-primary);
+  }
+
+  .interest-item p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+  }
+</style>

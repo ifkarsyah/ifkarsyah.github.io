@@ -1,0 +1,16 @@
+---
+interface Props {
+  tags: string[];
+  linkable?: boolean;
+}
+
+const { tags, linkable = true } = Astro.props;
+---
+
+<div class="tags">
+  {tags.map(tag =>
+    linkable
+      ? <a href={`/tags/${tag}`} class="tag">{tag}</a>
+      : <span class="tag">{tag}</span>
+  )}
+</div>

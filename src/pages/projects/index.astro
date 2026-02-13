@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+
+const projectFiles = import.meta.glob('../../content/projects/*.md', { eager: true });
+
+const projects = Object.entries(projectFiles)
+  .map(([path, mod]: [string, any]) => ({
+    ...mod.frontmatter,
+    slug: path.split('/').pop()!.replace('.md', ''),
+  }))
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+---
+
+<BaseLayout pageTitle="Projects" description="A showcase of my software projects.">
+  <div class="page-header">
+    <h1>Projects</h1>
+    <p>Things I've built — from open source libraries to production services.</p>
+  </div>
+
+  <div class="cards-grid">
+    {projects.map((project: any) => (
+      <ProjectCard
+        title={project.title}
+        description={project.description}
+        tags={project.tags}
+        slug={project.slug}
+        featured={project.featured}
+        link={project.link}
+      />
+    ))}
+  </div>
+</BaseLayout>
