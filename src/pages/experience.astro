@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ExperienceItem from '../components/ExperienceItem.astro';
 import experiences from '../data/experiences.json';
+import achievements from '../data/achievements.json';
 
 const workExperiences = experiences.filter((exp: any) => exp.type === 'work');
 const educationExperiences = experiences.filter((exp: any) => exp.type === 'education');
@@ -48,6 +49,21 @@ const educationExperiences = experiences.filter((exp: any) => exp.type === 'educ
       ))}
     </div>
   </section>
+
+  <section class="experience-section">
+    <h2 class="section-title">Achievements</h2>
+    <div class="achievements-list">
+      {achievements.map((item: any) => (
+        <div class="achievement-item">
+          <span class="achievement-scope">{item.scope}</span>
+          <div>
+            <p class="achievement-title">{item.title}</p>
+            <p class="achievement-desc">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -62,5 +78,50 @@ const educationExperiences = experiences.filter((exp: any) => exp.type === 'educ
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--border-color, #2d3748);
+  }
+
+  .achievements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .achievement-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+  }
+
+  .achievement-scope {
+    flex-shrink: 0;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    background: rgba(0, 217, 255, 0.1);
+    border: 1px solid rgba(0, 217, 255, 0.25);
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    margin-top: 0.15rem;
+    white-space: nowrap;
+  }
+
+  .achievement-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  .achievement-desc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
   }
 </style>

@@ -1,62 +1,76 @@
 [
   {
     "id": "1",
-    "title": "Software Engineer — Data Platform",
-    "company": "Tech Company",
+    "title": "Senior Engineer, Data Infrastructure",
+    "company": "StraitsX",
     "type": "work",
-    "startDate": "2023-01",
+    "startDate": "2024-05",
     "endDate": null,
-    "description": "Building and maintaining core data platform infrastructure that powers analytics, ML pipelines, and real-time reporting across the organization.",
+    "description": "Building and maintaining data infrastructure powering real-time and batch analytics across the organization.",
     "bullets": [
-      "Designed and operated a real-time ingestion pipeline with Apache Flink processing 500k+ events/sec",
-      "Migrated batch ETL workloads from Hive to Spark on Databricks, cutting job runtimes by 60%",
-      "Deployed and tuned ClickHouse cluster for OLAP queries serving product analytics dashboards"
+      "Replaced expensive batch RDS snapshot ingestion with real-time CDC → BigQuery across 800+ PostgreSQL/MySQL tables, improving data latency while reducing monthly spend by $8,000.",
+      "Upgraded Airflow from Composer 2 to Composer 3, modernizing Python runtimes and system packages while maintaining backward compatibility for 100+ DAGs.",
+      "Led cost observability initiative — implemented monitoring dashboards and review cycles, reducing BigQuery slot usage by 527 hours/day and saving $1.5K/month via table partitioning.",
+      "Deployed Apache Spark on GCP to enable DBT Python models, unlocking flexible transformation logic previously impossible due to BigQuery's SQL-only limitation."
     ],
-    "tags": ["Python", "Apache Flink", "Spark", "ClickHouse", "Kubernetes"]
+    "tags": ["BigQuery", "CDC", "Airflow", "Apache Spark", "dbt", "GCP"]
   },
   {
     "id": "2",
-    "title": "Data Engineer Intern",
-    "company": "E-commerce Platform",
+    "title": "L4 Data Infrastructure Engineer",
+    "company": "Xendit",
     "type": "work",
-    "startDate": "2022-06",
-    "endDate": "2022-12",
-    "description": "Contributed to the data warehouse and pipeline infrastructure team. Focused on improving data reliability and query performance.",
+    "startDate": "2022-10",
+    "endDate": "2024-03",
+    "description": "Led infrastructure-level data platform work: cost optimization, real-time processing, and tooling for data science teams.",
     "bullets": [
-      "Built dbt models and tests to standardize 30+ core business metrics across the warehouse",
-      "Optimized BigQuery queries reducing monthly compute cost by 25%",
-      "Developed Airflow DAGs to orchestrate daily and hourly data refresh pipelines"
+      "Achieved $7,400/month cost reduction by analyzing network traffic with Datadog and migrating Trino on Kubernetes from multizone to active-standby architecture.",
+      "Improved clickstream analysis by migrating from batch to real-time with Kafka, Spark Streaming, and Databricks.",
+      "Created Databricks notebook templates with integrated MLflow tracking, enabling data scientists to rapidly prototype and monitor experiments.",
+      "Built a custom Trino logging plugin in Java to track query ownership and identify high-cost users."
     ],
-    "tags": ["Python", "SQL", "BigQuery", "dbt", "Airflow"]
+    "tags": ["Trino", "Kubernetes", "Kafka", "Spark Streaming", "Databricks", "Datadog", "Java"]
   },
   {
     "id": "3",
-    "title": "Bachelor of Computer Science",
-    "company": "University of Technology",
-    "type": "education",
-    "startDate": "2019-08",
-    "endDate": "2023-05",
-    "description": "Focused on algorithms, data structures, databases, and distributed systems. Final thesis on query optimization for analytical workloads.",
+    "title": "L3 Data Engineer",
+    "company": "Xendit",
+    "type": "work",
+    "startDate": "2021-10",
+    "endDate": "2022-09",
+    "description": "Designed ingestion frameworks and data transformation pipelines, with focus on reliability and self-service for data consumers.",
     "bullets": [
-      "GPA: 3.8/4.0, Dean's List for 4 semesters",
-      "Thesis: Cost-based query optimization techniques for distributed SQL engines",
-      "Teaching Assistant for Database Systems course"
+      "Developed a config-driven ingestion framework (Strategy pattern + FastAPI) integrating 10+ sources: PostgreSQL, MongoDB, Jira, Zendesk, CleverTap, and Facebook Ads.",
+      "Reduced manual COGS calculation from 3 days to under 1 hour by implementing Slowly Changing Dimension (SCD) logic in dbt models.",
+      "Applied IaC with Terraform to automate provisioning of Spark clusters and AWS IAM roles, ensuring environment parity."
     ],
-    "tags": ["Algorithms", "Databases", "Distributed Systems"]
+    "tags": ["Python", "FastAPI", "dbt", "Terraform", "Spark", "PostgreSQL", "MongoDB"]
   },
   {
     "id": "4",
-    "title": "Open Source Contributor",
-    "company": "Various Projects",
+    "title": "L2 Junior Data Engineer",
+    "company": "Xendit",
     "type": "work",
-    "startDate": "2021-01",
-    "endDate": null,
-    "description": "Active contributor to open source data tooling projects. Focus on query engines, data connectors, and infrastructure tooling.",
+    "startDate": "2021-03",
+    "endDate": "2021-09",
+    "description": "Contributed to platform reliability and code quality initiatives on the data engineering team.",
     "bullets": [
-      "Contributed connector improvements to Trino open-source project",
-      "Maintained a Python library for ClickHouse schema management with 300+ GitHub stars",
-      "Regular participant in data engineering community discussions and meetups"
+      "Consolidated 2,000+ lines of user-contributed PySpark code from Databricks notebooks into a shared library.",
+      "Developed CI/CD validation for dbt and Looker to enforce partitioning standards and prevent inefficient deployments."
     ],
-    "tags": ["Python", "Trino", "ClickHouse", "Open Source"]
+    "tags": ["PySpark", "Databricks", "dbt", "Looker", "CI/CD"]
+  },
+  {
+    "id": "5",
+    "title": "B.S. in Computer Science",
+    "company": "Bandung Institute of Technology",
+    "type": "education",
+    "startDate": "2017-08",
+    "endDate": "2021-10",
+    "description": "Focused on algorithms, data structures, and software engineering fundamentals.",
+    "bullets": [
+      "Lab Assistant: KU1102 — Introduction to Information Technology (2019)"
+    ],
+    "tags": ["Algorithms", "Data Structures", "Computer Science"]
   }
 ]
