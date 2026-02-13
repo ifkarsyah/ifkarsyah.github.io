@@ -2,6 +2,21 @@
    CSS Custom Properties
    =========================== */
 :root {
+  --bg-primary: #f5f7fa;
+  --bg-secondary: #eaecf0;
+  --bg-card: #ffffff;
+  --text-primary: #1a1f2e;
+  --text-secondary: #4a5568;
+  --accent: #0099bb;
+  --accent-dim: rgba(0, 153, 187, 0.12);
+  --border: #d1d9e0;
+  --border-hover: #a0aec0;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --radius: 8px;
+  --transition: 0.3s ease;
+}
+
+html.dark {
   --bg-primary: #0f1419;
   --bg-secondary: #1a1f2e;
   --bg-card: #1e2433;
@@ -12,8 +27,6 @@
   --border: #2d3748;
   --border-hover: #4a5568;
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  --radius: 8px;
-  --transition: 0.3s ease;
 }
 
 /* ===========================

@@ -101,6 +101,10 @@ function groupByLevel(items: TechItem[]): Record<string, TechItem[]> {
   .level-familiar   { color: #34d399; }
   .level-learning   { color: #fbbf24; }
 
+  :global(html:not(.dark)) .level-proficient { color: #0077aa; }
+  :global(html:not(.dark)) .level-familiar   { color: #059669; }
+  :global(html:not(.dark)) .level-learning   { color: #b45309; }
+
   .techstack-items {
     display: flex;
     flex-wrap: wrap;
