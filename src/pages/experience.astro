@@ -41,63 +41,49 @@ function formatDate(dateStr: string) {
     <h2 class="section-title">Work Experience</h2>
     <div class="timeline">
       {companyGroups.map((group) => (
-        group.roles.length === 1 ? (
-          /* Single role — render normally */
-          <ExperienceItem
-            title={group.roles[0].title}
-            company={group.company}
-            type="work"
-            startDate={group.roles[0].startDate}
-            endDate={group.roles[0].endDate}
-            description={group.roles[0].description}
-            bullets={group.roles[0].bullets}
-            tags={group.roles[0].tags}
-          />
-        ) : (
-          /* Multiple roles — grouped progression card */
-          <div class="timeline-item type-work">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content company-group">
-              <div class="company-group-header">
-                <div>
-                  <h3 class="company-group-name">{group.company}</h3>
-                  <span class="company-group-tenure">
-                    {group.roles.length} roles · {formatDate(group.startDate)} – {group.endDate ? formatDate(group.endDate) : 'Present'}
-                  </span>
-                </div>
-              </div>
-              <div class="roles-list">
-                {group.roles.map((role: any, i: number) => (
-                  <div class="role-item">
-                    {i > 0 && (
-                      <div class="promotion-bridge">
-                        <span class="promotion-arrow">↑</span>
-                        <span class="promotion-label">promoted</span>
-                      </div>
-                    )}
-                    <div class="role-header">
-                      <h4 class="role-title">{role.title}</h4>
-                      <span class="role-date">
-                        {formatDate(role.startDate)} – {role.endDate ? formatDate(role.endDate) : 'Present'}
-                      </span>
-                    </div>
-                    <p class="timeline-description">{role.description}</p>
-                    {role.bullets.length > 0 && (
-                      <ul class="timeline-bullets">
-                        {role.bullets.map((b: string) => <li>{b}</li>)}
-                      </ul>
-                    )}
-                    {role.tags.length > 0 && (
-                      <div class="tags">
-                        {role.tags.map((tag: string) => <span class="tag">{tag}</span>)}
-                      </div>
-                    )}
-                  </div>
-                ))}
+        <div class="timeline-item type-work">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content company-group">
+            <div class="company-group-header">
+              <div>
+                <h3 class="company-group-name">{group.company}</h3>
+                {group.roles[0].tagline && <p class="timeline-tagline">{group.roles[0].tagline}</p>}
+                <span class="company-group-tenure">
+                  {formatDate(group.startDate)} – {group.endDate ? formatDate(group.endDate) : 'Present'}
+                </span>
               </div>
             </div>
+            <div class="roles-list">
+              {group.roles.map((role: any, i: number) => (
+                <div class="role-item">
+                  {i > 0 && (
+                    <div class="promotion-bridge">
+                      <span class="promotion-arrow">↑</span>
+                      <span class="promotion-label">promoted</span>
+                    </div>
+                  )}
+                  <div class="role-header">
+                    <h4 class="role-title">{role.title}</h4>
+                    <span class="role-date">
+                      {formatDate(role.startDate)} – {role.endDate ? formatDate(role.endDate) : 'Present'}
+                    </span>
+                  </div>
+                  <p class="timeline-description">{role.description}</p>
+                  {role.bullets.length > 0 && (
+                    <ul class="timeline-bullets">
+                      {role.bullets.map((b: string) => <li>{b}</li>)}
+                    </ul>
+                  )}
+                  {role.tags.length > 0 && (
+                    <div class="tags">
+                      {role.tags.map((tag: string) => <span class="tag">{tag}</span>)}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
-        )
+        </div>
       ))}
     </div>
   </section>

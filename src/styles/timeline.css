@@ -91,6 +91,14 @@
   margin: 0.1rem 0 0;
 }
 
+.timeline-tagline {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0.2rem 0 0;
+  font-style: italic;
+  line-height: 1.4;
+}
+
 .timeline-date {
   font-size: 0.8rem;
   color: var(--text-secondary);

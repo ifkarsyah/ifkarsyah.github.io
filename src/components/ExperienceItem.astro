@@ -2,6 +2,7 @@
 interface Props {
   title: string;
   company: string;
+  tagline?: string;
   type: 'work' | 'education';
   startDate: string;
   endDate: string | null;
@@ -10,7 +11,7 @@ interface Props {
   tags: string[];
 }
 
-const { title, company, type, startDate, endDate, description, bullets, tags } = Astro.props;
+const { title, company, tagline, type, startDate, endDate, description, bullets, tags } = Astro.props;
 
 function formatDate(dateStr: string) {
   const [year, month] = dateStr.split('-');
@@ -29,6 +30,7 @@ const end = endDate ? formatDate(endDate) : 'Present';
       <div>
         <h3 class="timeline-title">{title}</h3>
         <p class="timeline-company">{company}</p>
+        {tagline && <p class="timeline-tagline">{tagline}</p>}
       </div>
       <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem;">
         <span class={`timeline-type ${type}`}>{type}</span>
