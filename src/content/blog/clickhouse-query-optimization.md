@@ -5,8 +5,8 @@ pubDate: 2024-01-10
 author: "ifkarsyah"
 tags: ["ClickHouse", "SQL", "Data Platform"]
 image:
-  url: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800"
-  alt: "Server infrastructure"
+  src: /blog/clickhouse.png
+  alt: "ClickHouse"
 ---
 
 ## Introduction

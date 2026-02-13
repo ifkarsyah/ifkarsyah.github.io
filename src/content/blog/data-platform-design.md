@@ -5,8 +5,8 @@ pubDate: 2023-08-05
 author: "ifkarsyah"
 tags: ["Data Platform", "Infrastructure", "Architecture"]
 image:
-  url: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800"
-  alt: "Infrastructure architecture"
+  src: /blog/data-platform.png
+  alt: "Data Platform"
 ---
 
 ## Why Data Platforms Rot

@@ -1,23 +1,19 @@
 ---
+import { getCollection, render } from 'astro:content';
 import BlogLayout from '../../layouts/BlogLayout.astro';
 
 export async function getStaticPaths() {
-  const postFiles = import.meta.glob('../../content/blog/*.md');
-  const entries = await Promise.all(
-    Object.entries(postFiles).map(async ([path, load]) => {
-      const mod = await load() as any;
-      return {
-        params: { slug: path.split('/').pop()!.replace('.md', '') },
-        props: { frontmatter: mod.frontmatter, Content: mod.default },
-      };
-    })
-  );
-  return entries;
+  const posts = await getCollection('blog');
+  return posts.map(entry => ({
+    params: { slug: entry.id.replace('.md', '') },
+    props: { entry },
+  }));
 }
 
-const { frontmatter, Content } = Astro.props;
+const { entry } = Astro.props;
+const { Content } = await render(entry);
 ---
 
-<BlogLayout frontmatter={frontmatter}>
+<BlogLayout frontmatter={entry.data}>
   <Content />
 </BlogLayout>

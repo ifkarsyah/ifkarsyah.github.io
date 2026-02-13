@@ -22,7 +22,7 @@ const blog = defineCollection({
     author: z.string().optional(),
     tags: z.array(z.string()),
     image: z.object({
-      url: z.string(),
+      src: z.string(),
       alt: z.string(),
     }).optional(),
   }),

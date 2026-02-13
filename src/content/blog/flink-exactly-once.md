@@ -5,8 +5,8 @@ pubDate: 2023-11-20
 author: "ifkarsyah"
 tags: ["Apache Flink", "Streaming", "Data Platform"]
 image:
-  url: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800"
-  alt: "Abstract data flow"
+  src: /blog/flink.png
+  alt: "Apache Flink"
 ---
 
 ## The Problem with Streaming
