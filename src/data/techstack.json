@@ -1,32 +1,37 @@
 {
   "languages": [
-    { "name": "Python", "icon": "🐍", "level": "Expert" },
-    { "name": "SQL", "icon": "🗄️", "level": "Expert" },
-    { "name": "Bash", "icon": "🖥️", "level": "Intermediate" },
-    { "name": "Java/Scala", "icon": "☕", "level": "Intermediate" }
+    { "name": "Python", "icon": "🐍", "level": "Proficient" },
+    { "name": "SQL", "icon": "🗄️", "level": "Proficient" },
+    { "name": "Bash", "icon": "🖥️", "level": "Familiar" },
+    { "name": "Java", "icon": "☕", "level": "Familiar" },
+    { "name": "Scala", "icon": "🪜", "level": "Familiar" },
+    { "name": "Go", "icon": "🦫", "level": "Familiar" },
+    { "name": "Rust", "icon": "🦀", "level": "Learning" },
+    { "name": "C++", "icon": "</>", "level": "Learning" }
   ],
   "data_processing": [
-    { "name": "Apache Spark", "icon": "⚡", "level": "Expert" },
-    { "name": "Apache Flink", "icon": "🌊", "level": "Advanced" },
-    { "name": "dbt", "icon": "🔧", "level": "Advanced" },
-    { "name": "Apache Kafka", "icon": "📨", "level": "Advanced" }
+    { "name": "Spark", "icon": "✨", "level": "Proficient" },
+    { "name": "dbt", "icon": "🔧", "level": "Proficient" },
+    { "name": "Airflow", "icon": "🌬️", "level": "Proficient" },
+    { "name": "Flink", "icon": "🐿️", "level": "Familiar" },
+    { "name": "Kafka", "icon": "📨", "level": "Familiar" },
+    { "name": "DuckDB", "icon": "🦆", "level": "Learning" }
   ],
   "databases": [
-    { "name": "ClickHouse", "icon": "🖱️", "level": "Expert" },
-    { "name": "Trino", "icon": "🔍", "level": "Advanced" },
-    { "name": "BigQuery", "icon": "🔵", "level": "Advanced" },
-    { "name": "Databricks", "icon": "🧱", "level": "Advanced" }
+    { "name": "Trino", "icon": "🔍", "level": "Proficient" },
+    { "name": "BigQuery", "icon": "🔵", "level": "Proficient" },
+    { "name": "Databricks", "icon": "🧱", "level": "Proficient" },
+    { "name": "ClickHouse", "icon": "🖱️", "level": "Familiar" }
   ],
   "infrastructure": [
-    { "name": "Kubernetes", "icon": "☸️", "level": "Advanced" },
-    { "name": "Docker", "icon": "🐳", "level": "Advanced" },
-    { "name": "Terraform", "icon": "🏗️", "level": "Intermediate" },
-    { "name": "Airflow", "icon": "🌬️", "level": "Advanced" }
+    { "name": "Docker", "icon": "🐳", "level": "Proficient" },
+    { "name": "Kubernetes", "icon": "☸️", "level": "Proficient" },
+    { "name": "Terraform", "icon": "🏗️", "level": "Familiar" }
   ],
   "tools": [
-    { "name": "Git", "icon": "🌿", "level": "Expert" },
-    { "name": "GitHub Actions", "icon": "⚙️", "level": "Advanced" },
-    { "name": "Linux", "icon": "🐧", "level": "Advanced" },
-    { "name": "Prometheus / Grafana", "icon": "📊", "level": "Intermediate" }
+    { "name": "Git", "icon": "🌿", "level": "Proficient" },
+    { "name": "GitHub Actions", "icon": "⚙️", "level": "Proficient" },
+    { "name": "Linux", "icon": "🐧", "level": "Familiar" },
+    { "name": "Prometheus / Grafana", "icon": "📊", "level": "Familiar" }
   ]
 }
