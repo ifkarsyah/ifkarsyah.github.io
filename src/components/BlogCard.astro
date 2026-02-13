@@ -20,8 +20,7 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
 <a href={`/blog/${slug}`} class="card blog-card">
   <div class="card-meta">
     <time datetime={new Date(pubDate).toISOString()}>{formattedDate}</time>
-    {author && <span class="card-meta-sep">·</span>}
-    {author && <span>{author}</span>}
+
   </div>
   <h3 class="card-title">{title}</h3>
   <p class="card-description">{description}</p>
