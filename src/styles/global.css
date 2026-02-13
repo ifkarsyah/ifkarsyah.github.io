@@ -112,7 +112,7 @@ pre code {
 /* ===========================
    Navigation
    =========================== */
-header {
+header.site-header {
   border-bottom: 1px solid var(--border);
   margin-bottom: 2.5rem;
   padding: 1rem 0;
