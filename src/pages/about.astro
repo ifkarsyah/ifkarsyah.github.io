@@ -4,10 +4,10 @@ import TechStackGrid from '../components/TechStackGrid.astro';
 import techstack from '../data/techstack.json';
 ---
 
-<BaseLayout pageTitle="About" description="About ifkarsyah — software engineer, Go enthusiast, distributed systems nerd.">
+<BaseLayout pageTitle="About" description="About ifkarsyah — software engineer on data platform and infrastructure.">
   <div class="page-header">
     <h1>About Me</h1>
-    <p>Software engineer, open source contributor, and distributed systems enthusiast.</p>
+    <p>Software engineer on data platform and infrastructure, open source contributor.</p>
   </div>
 
   <!-- Bio -->
@@ -15,15 +15,15 @@ import techstack from '../data/techstack.json';
     <p class="section-title">Who I Am</p>
     <div class="bio">
       <p>
-        Hi, I'm <strong style="color: var(--text-primary);">ifkarsyah</strong> — a software engineer who loves building reliable, high-performance backend systems.
-        I spend most of my time writing Go, designing APIs, and thinking about how to make distributed systems that actually work.
+        Hi, I'm <strong style="color: var(--text-primary);">ifkarsyah</strong> — a software engineer focused on data platform and infrastructure.
+        I build the systems that ingest, process, store, and serve data at scale: streaming pipelines, OLAP clusters, data lakehouses, and the orchestration that ties them together.
       </p>
       <p>
-        I'm particularly interested in the intersection of performance and correctness — systems that are both fast and provably right.
-        When I'm not coding, I'm likely reading papers on distributed systems, contributing to open source, or tinkering with side projects.
+        My core stack is Python, SQL, Apache Spark, Apache Flink, ClickHouse, Trino, BigQuery, Databricks, and Kubernetes.
+        I care about reliability, observability, and making data trustworthy — because dashboards built on bad data are worse than no dashboards at all.
       </p>
       <p>
-        I believe in writing software that's simple, well-tested, and easy to reason about. Complexity is the enemy of reliability.
+        When I'm not building pipelines, I'm reading about query engine internals, contributing to open source data tooling, or writing about things I wish someone had explained better.
       </p>
       <div style="margin-top: 1.25rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
         <a href="/experience/" class="btn btn-outline">View Experience</a>
@@ -47,31 +47,31 @@ import techstack from '../data/techstack.json';
     <p class="section-title">Interests</p>
     <div class="interests-grid">
       <div class="interest-item">
-        <span class="interest-icon">⚡</span>
+        <span class="interest-icon">🌊</span>
         <div>
-          <h3>Performance Engineering</h3>
-          <p>Profiling, benchmarking, and optimizing systems to their physical limits.</p>
+          <h3>Stream Processing</h3>
+          <p>Real-time pipelines, windowing, watermarks, and exactly-once semantics with Flink and Kafka.</p>
         </div>
       </div>
       <div class="interest-item">
-        <span class="interest-icon">🌐</span>
+        <span class="interest-icon">🔍</span>
         <div>
-          <h3>Distributed Systems</h3>
-          <p>Consensus algorithms, replication, fault tolerance, and the CAP theorem.</p>
+          <h3>Query Engines</h3>
+          <p>How databases like ClickHouse and Trino plan, optimize, and execute SQL at massive scale.</p>
         </div>
       </div>
       <div class="interest-item">
-        <span class="interest-icon">🔧</span>
+        <span class="interest-icon">🏗️</span>
         <div>
-          <h3>Developer Tooling</h3>
-          <p>Building CLI tools and developer experiences that make engineers more productive.</p>
+          <h3>Data Platform Design</h3>
+          <p>Building platforms that scale: lakehouses, data contracts, observability, and self-service patterns.</p>
         </div>
       </div>
       <div class="interest-item">
         <span class="interest-icon">📖</span>
         <div>
           <h3>Open Source</h3>
-          <p>Contributing to the ecosystem and building tools the community can rely on.</p>
+          <p>Contributing to the data engineering ecosystem and building tools the community can rely on.</p>
         </div>
       </div>
     </div>

@@ -1,33 +1,33 @@
 [
   {
     "id": "1",
-    "title": "Software Engineer",
-    "company": "Tech Startup Co.",
+    "title": "Software Engineer — Data Platform",
+    "company": "Tech Company",
     "type": "work",
     "startDate": "2023-01",
     "endDate": null,
-    "description": "Building scalable backend services and APIs using Go and PostgreSQL. Led migration of legacy monolith to microservices architecture.",
+    "description": "Building and maintaining core data platform infrastructure that powers analytics, ML pipelines, and real-time reporting across the organization.",
     "bullets": [
-      "Designed and implemented RESTful APIs serving 100k+ requests/day",
-      "Reduced API response time by 40% through query optimization and caching",
-      "Mentored 2 junior engineers on Go best practices and system design"
+      "Designed and operated a real-time ingestion pipeline with Apache Flink processing 500k+ events/sec",
+      "Migrated batch ETL workloads from Hive to Spark on Databricks, cutting job runtimes by 60%",
+      "Deployed and tuned ClickHouse cluster for OLAP queries serving product analytics dashboards"
     ],
-    "tags": ["Go", "PostgreSQL", "Docker", "Kubernetes"]
+    "tags": ["Python", "Apache Flink", "Spark", "ClickHouse", "Kubernetes"]
   },
   {
     "id": "2",
-    "title": "Backend Developer Intern",
-    "company": "FinTech Corp",
+    "title": "Data Engineer Intern",
+    "company": "E-commerce Platform",
     "type": "work",
     "startDate": "2022-06",
     "endDate": "2022-12",
-    "description": "Worked on payment processing systems and internal tooling. Contributed to core transaction engine.",
+    "description": "Contributed to the data warehouse and pipeline infrastructure team. Focused on improving data reliability and query performance.",
     "bullets": [
-      "Implemented webhook retry mechanism reducing failed deliveries by 60%",
-      "Built internal dashboard for transaction monitoring using React and Go",
-      "Wrote comprehensive unit and integration tests achieving 85% coverage"
+      "Built dbt models and tests to standardize 30+ core business metrics across the warehouse",
+      "Optimized BigQuery queries reducing monthly compute cost by 25%",
+      "Developed Airflow DAGs to orchestrate daily and hourly data refresh pipelines"
     ],
-    "tags": ["Go", "React", "MySQL", "Redis"]
+    "tags": ["Python", "SQL", "BigQuery", "dbt", "Airflow"]
   },
   {
     "id": "3",
@@ -36,13 +36,13 @@
     "type": "education",
     "startDate": "2019-08",
     "endDate": "2023-05",
-    "description": "Focused on algorithms, data structures, distributed systems, and software engineering. Graduated with honors.",
+    "description": "Focused on algorithms, data structures, databases, and distributed systems. Final thesis on query optimization for analytical workloads.",
     "bullets": [
       "GPA: 3.8/4.0, Dean's List for 4 semesters",
-      "Thesis: Distributed caching strategies for high-throughput systems",
-      "Teaching Assistant for Data Structures and Algorithms course"
+      "Thesis: Cost-based query optimization techniques for distributed SQL engines",
+      "Teaching Assistant for Database Systems course"
     ],
-    "tags": ["Algorithms", "Distributed Systems", "Software Engineering"]
+    "tags": ["Algorithms", "Databases", "Distributed Systems"]
   },
   {
     "id": "4",
@@ -51,12 +51,12 @@
     "type": "work",
     "startDate": "2021-01",
     "endDate": null,
-    "description": "Active contributor to open source Go projects. Submitted PRs to popular libraries and maintained personal OSS tools.",
+    "description": "Active contributor to open source data tooling projects. Focus on query engines, data connectors, and infrastructure tooling.",
     "bullets": [
-      "Contributed database driver improvements to popular ORM library",
-      "Maintained CLI tool with 500+ GitHub stars",
-      "Regular participant in Hacktoberfest events"
+      "Contributed connector improvements to Trino open-source project",
+      "Maintained a Python library for ClickHouse schema management with 300+ GitHub stars",
+      "Regular participant in data engineering community discussions and meetups"
     ],
-    "tags": ["Go", "Open Source", "CLI"]
+    "tags": ["Python", "Trino", "ClickHouse", "Open Source"]
   }
 ]
