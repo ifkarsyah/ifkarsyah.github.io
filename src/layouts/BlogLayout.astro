@@ -9,7 +9,7 @@ interface Props {
     pubDate: string;
     author?: string;
     tags: string[];
-    image?: { url: string; alt: string };
+    image?: { src: string; alt: string };
   };
 }
 
@@ -37,7 +37,7 @@ const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('en-US', 
 
     {frontmatter.image && (
       <div class="post-image">
-        <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+        <img src={frontmatter.image.src} alt={frontmatter.image.alt} />
       </div>
     )}
 
