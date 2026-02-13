@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
+import FilterBar from '../../components/FilterBar.astro';
 
 const projectFiles = import.meta.glob('../../content/projects/*.md', { eager: true });
 
@@ -10,6 +11,9 @@ const projects = Object.entries(projectFiles)
     slug: path.split('/').pop()!.replace('.md', ''),
   }))
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+const allTags = [...new Set(projects.flatMap((p: any) => p.tags ?? []))].sort() as string[];
+const allYears = [...new Set(projects.map((p: any) => String(new Date(p.date).getFullYear())))].sort((a, b) => Number(b) - Number(a)) as string[];
 ---
 
 <BaseLayout pageTitle="Projects" description="A showcase of my software projects.">
@@ -18,16 +22,20 @@ const projects = Object.entries(projectFiles)
     <p>Things I've built — from open source libraries to production services.</p>
   </div>
 
+  <FilterBar tags={allTags} years={allYears} />
+
   <div class="cards-grid">
     {projects.map((project: any) => (
-      <ProjectCard
-        title={project.title}
-        description={project.description}
-        tags={project.tags}
-        slug={project.slug}
-        featured={project.featured}
-        link={project.link}
-      />
+      <div class="card-item" data-tags={(project.tags ?? []).join(',')} data-year={String(new Date(project.date).getFullYear())}>
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          tags={project.tags}
+          slug={project.slug}
+          featured={project.featured}
+          link={project.link}
+        />
+      </div>
     ))}
   </div>
 </BaseLayout>

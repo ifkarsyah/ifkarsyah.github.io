@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BlogCard from '../../components/BlogCard.astro';
+import FilterBar from '../../components/FilterBar.astro';
 
 const postFiles = import.meta.glob('../../content/blog/*.md', { eager: true });
 
@@ -10,6 +11,9 @@ const posts = Object.entries(postFiles)
     slug: path.split('/').pop()!.replace('.md', ''),
   }))
   .sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+
+const allTags = [...new Set(posts.flatMap((p: any) => p.tags ?? []))].sort() as string[];
+const allYears = [...new Set(posts.map((p: any) => String(new Date(p.pubDate).getFullYear())))].sort((a, b) => Number(b) - Number(a)) as string[];
 ---
 
 <BaseLayout pageTitle="Blog" description="Writing about software engineering, Go, and distributed systems.">
@@ -18,16 +22,20 @@ const posts = Object.entries(postFiles)
     <p>Writing about Go, distributed systems, and software engineering.</p>
   </div>
 
+  <FilterBar tags={allTags} years={allYears} />
+
   <div class="cards-grid">
     {posts.map((post: any) => (
-      <BlogCard
-        title={post.title}
-        description={post.description}
-        pubDate={post.pubDate}
-        tags={post.tags}
-        slug={post.slug}
-        author={post.author}
-      />
+      <div class="card-item" data-tags={(post.tags ?? []).join(',')} data-year={String(new Date(post.pubDate).getFullYear())}>
+        <BlogCard
+          title={post.title}
+          description={post.description}
+          pubDate={post.pubDate}
+          tags={post.tags}
+          slug={post.slug}
+          author={post.author}
+        />
+      </div>
     ))}
   </div>
 </BaseLayout>

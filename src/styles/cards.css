@@ -28,6 +28,14 @@
   gap: 1.25rem;
 }
 
+.card-item {
+  display: flex;
+}
+
+.card-item > .card {
+  flex: 1;
+}
+
 @media (max-width: 600px) {
   .cards-grid {
     grid-template-columns: 1fr;
