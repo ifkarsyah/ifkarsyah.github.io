@@ -29,9 +29,14 @@ const recentPosts = Object.entries(postFiles)
   <section class="hero">
     <div class="hero-content">
       <div class="hero-text">
-        <p class="hero-label">Hey, I'm</p>
-        <h1 class="hero-name">ifkarsyah</h1>
-        <p class="hero-subtitle">Software Engineer on data platform and infrastructure. I build pipelines, query engines, and the systems that keep data reliable at scale. Python, SQL, Spark, Flink, ClickHouse — and occasionally I blog about it.</p>
+        <p class="hero-label">Hey, I'm Ferdian</p>
+        <p class="hero-subtitle">
+          Software engineer focused on data platforms — building pipelines, query engines, and systems that keep data reliable at scale.
+          I've worked at <a href="https://shopee.co.id/" target="_blank" rel="noopener noreferrer">Shopee</a>, <a href="https://www.xendit.co/" target="_blank" rel="noopener noreferrer">Xendit</a>, and <a href="https://www.straitsx.com/" target="_blank" rel="noopener noreferrer">StraitsX</a>.
+          I graduated from <a href="https://itb.ac.id/" target="_blank" rel="noopener noreferrer">ITB</a> with a degree in Computer Science.
+          <br/><br/>
+          Beyond code, I’m a traveler — visited around 20 countries so far, exploring new cultures, cuisines, and experiences. I also share my travel stories on <a href="https://langkah.vercel.app/" target="_blank" rel="noopener noreferrer">Langkah</a>.
+        </p>
         <div class="hero-cta">
           <a href="/Ferdian_Ifkarsyah___Resume___2025___11____DE.pdf" download class="btn btn-outline">Download Resume</a>
         </div>
@@ -142,6 +147,15 @@ const recentPosts = Object.entries(postFiles)
     max-width: 55ch;
     line-height: 1.7;
     margin-bottom: 1.75rem;
+  }
+
+  .hero-subtitle a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .hero-subtitle a:hover {
+    text-decoration: underline;
   }
 
   .hero-cta {
