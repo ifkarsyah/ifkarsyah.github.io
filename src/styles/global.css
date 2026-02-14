@@ -348,6 +348,39 @@ header nav {
 }
 
 /* ===========================
+   Social Icons
+   =========================== */
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all var(--transition);
+}
+
+.social-icon:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  opacity: 1;
+}
+
+.social-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* ===========================
    Footer
    =========================== */
 footer {
