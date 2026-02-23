@@ -3,7 +3,8 @@ title: "ClickHouse Series, Part 6: Materialized Views & Operations"
 description: "Pre-aggregation with materialized views, replication with ReplicatedMergeTree, sharding with Distributed tables, and production monitoring."
 pubDate: 2024-07-14
 author: "ifkarsyah"
-tags: ["ClickHouse", "SQL", "Data Engineering"]
+domain: "Analytics"
+stack: ["ClickHouse"]
 image:
   src: ./clickhouse-series.png
   alt: "ClickHouse Materialized Views and Operations"

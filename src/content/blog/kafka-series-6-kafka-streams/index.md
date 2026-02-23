@@ -3,7 +3,8 @@ title: "Kafka Series, Part 6: Kafka Streams"
 description: "Stream processing natively inside Kafka — KStream vs KTable, stateful aggregations, joins, windowing, and state stores."
 pubDate: 2024-05-19
 author: "ifkarsyah"
-tags: ["Kafka", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Kafka"]
 image:
   src: ./kafka-series.png
   alt: "Apache Kafka Streams"

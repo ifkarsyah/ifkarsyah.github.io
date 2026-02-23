@@ -3,7 +3,8 @@ title: "Delta Lake Series, Part 4: Time Travel & Versioning"
 description: "Querying historical snapshots by version or timestamp, rolling back bad writes, auditing the table history, and managing retention with VACUUM."
 pubDate: 2024-09-01
 author: "ifkarsyah"
-tags: ["Delta Lake", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Delta Lake", "Spark"]
 image:
   src: ./delta-lake-series.png
   alt: "Delta Lake Time Travel and Versioning"

@@ -7,7 +7,8 @@ interface Props {
     title: string;
     description: string;
     date: string;
-    tags: string[];
+    domain?: string;
+    stack?: string[];
     link?: string;
     image?: string;
   };
@@ -34,7 +35,7 @@ const formattedDate = new Date(frontmatter.date).toLocaleDateString('en-US', {
       </div>
       <h1>{frontmatter.title}</h1>
       <p class="project-description">{frontmatter.description}</p>
-      <TagList tags={frontmatter.tags} />
+      {(frontmatter.domain || frontmatter.stack?.length) && <TagList domain={frontmatter.domain} stack={frontmatter.stack} />}
     </header>
 
     <hr class="divider" />

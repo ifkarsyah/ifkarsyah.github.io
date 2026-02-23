@@ -3,7 +3,8 @@ title: "Spark Streaming Series, Part 0: Overview"
 description: "Stream processing with Apache Spark — from basics to Structured Streaming, the modern architecture for real-time data pipelines."
 pubDate: 2024-03-03
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Spark"]
 image:
   src: ./spark-streaming-series.png
   alt: "Apache Spark Streaming"

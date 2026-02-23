@@ -2,7 +2,8 @@
 title: "Engima — Cinema Ticket Booking App"
 description: "A full-stack web app for cinema ticket booking built as a college project (IF3110), with movie listings, seat selection, payment, and user reviews."
 date: 2020-02-01
-tags: ["JavaScript", "AWS", "Web", "Full Stack"]
+domain: "Frontend"
+stack: ["React", "TypeScript", "Vite"]
 link: "https://github.com/ifkarsyah/engima-main"
 image: ""
 featured: false

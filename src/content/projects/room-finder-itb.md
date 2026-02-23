@@ -2,7 +2,8 @@
 title: "Room Finder ITB — LINE Bot for Campus Rooms"
 description: "A LINE bot that translates ITB room codes into human-readable building names, helping students find their classrooms faster."
 date: 2018-08-09
-tags: ["Python", "LINE Bot", "Heroku"]
+domain: "Frontend"
+stack: ["React", "TypeScript", "Vite"]
 link: "https://github.com/ifkarsyah/room-finder-itb"
 image: ""
 featured: false

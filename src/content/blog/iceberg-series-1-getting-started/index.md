@@ -3,7 +3,8 @@ title: "Iceberg Series, Part 1: Getting Started"
 description: "Creating Iceberg tables with Spark, reads, writes, MERGE, time travel, and inspecting table history."
 pubDate: 2024-10-13
 author: "ifkarsyah"
-tags: ["Iceberg", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Apache Iceberg"]
 image:
   src: ./iceberg-series.png
   alt: "Apache Iceberg Getting Started"

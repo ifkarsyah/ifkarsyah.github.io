@@ -3,7 +3,8 @@ title: "Kafka Series, Part 3: Consumers & Consumer Groups"
 description: "Reading from Kafka at scale — consumer groups, partition assignment, offset commits, and handling rebalances."
 pubDate: 2024-04-28
 author: "ifkarsyah"
-tags: ["Kafka", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Kafka"]
 image:
   src: ./kafka-series.png
   alt: "Apache Kafka Consumers and Consumer Groups"

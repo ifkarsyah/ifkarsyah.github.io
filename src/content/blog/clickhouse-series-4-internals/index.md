@@ -3,7 +3,8 @@ title: "ClickHouse Series, Part 4: Internals — Parts, Merges & Indexes"
 description: "How ClickHouse actually stores data — parts, granules, the sparse primary index, data-skipping indexes, and the background merge process."
 pubDate: 2024-06-30
 author: "ifkarsyah"
-tags: ["ClickHouse", "SQL", "Data Engineering"]
+domain: "Analytics"
+stack: ["ClickHouse"]
 image:
   src: ./clickhouse-series.png
   alt: "ClickHouse Internals Parts Merges Indexes"

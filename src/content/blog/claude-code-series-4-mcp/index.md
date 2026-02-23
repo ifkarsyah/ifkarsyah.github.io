@@ -3,7 +3,8 @@ title: "Claude Code Series, Part 4: MCP (Model Context Protocol)"
 description: "Connect Claude Code to external services and expand its capabilities with MCP."
 pubDate: 2026-02-26
 author: "ifkarsyah"
-tags: ["Claude Code", "AI", "Developer Tools"]
+domain: "AI Engineering"
+stack: ["Claude Code"]
 ---
 
 ## What is MCP?

@@ -3,7 +3,8 @@ title: "Kafka Series, Part 0: Overview"
 description: "What is Apache Kafka, what problem does it solve, and when should you use it? A roadmap for the series."
 pubDate: 2024-04-07
 author: "ifkarsyah"
-tags: ["Kafka", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Kafka"]
 image:
   src: ./kafka-series.png
   alt: "Apache Kafka Overview"

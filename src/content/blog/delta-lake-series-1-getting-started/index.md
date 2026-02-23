@@ -3,7 +3,8 @@ title: "Delta Lake Series, Part 1: Getting Started"
 description: "Creating Delta tables, reading and writing with Spark, Delta SQL, and what the _delta_log looks like in practice."
 pubDate: 2024-08-11
 author: "ifkarsyah"
-tags: ["Delta Lake", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Delta Lake", "Spark"]
 image:
   src: ./delta-lake-series.png
   alt: "Delta Lake Getting Started"

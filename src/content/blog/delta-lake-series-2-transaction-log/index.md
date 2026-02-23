@@ -3,7 +3,8 @@ title: "Delta Lake Series, Part 2: Transaction Log & ACID"
 description: "How the Delta Lake transaction log enables atomicity, serializable isolation, optimistic concurrency, and conflict resolution."
 pubDate: 2024-08-18
 author: "ifkarsyah"
-tags: ["Delta Lake", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Delta Lake", "Spark"]
 image:
   src: ./delta-lake-series.png
   alt: "Delta Lake Transaction Log and ACID"

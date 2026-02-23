@@ -2,7 +2,8 @@
 title: "Pasin — Tokopedia Devcamp Hackathon 2021"
 description: "A hackathon project built at Tokopedia Devcamp 2021. Monorepo with a JavaScript frontend, backend API, and database initialization scripts."
 date: 2021-07-09
-tags: ["JavaScript", "Hackathon", "Full Stack"]
+domain: "Frontend"
+stack: ["React", "TypeScript", "Vite"]
 link: "https://github.com/ifkarsyah/pasin"
 image: ""
 featured: false

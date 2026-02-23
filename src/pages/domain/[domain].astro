@@ -17,30 +17,30 @@ export async function getStaticPaths() {
     slug: path.split('/').slice(-2, -1)[0],
   }));
 
-  const projectTags = projects.flatMap((p: any) => p.tags ?? []);
-  const postTags = posts.flatMap((p: any) => p.tags ?? []);
-  const uniqueTags = [...new Set([...projectTags, ...postTags])];
+  const projectDomains = projects.map((p: any) => p.domain).filter(d => d);
+  const postDomains = posts.map((p: any) => p.domain).filter(d => d);
+  const uniqueDomains = [...new Set([...projectDomains, ...postDomains])];
 
-  return uniqueTags.map(tag => ({
-    params: { tag },
+  return uniqueDomains.map(domain => ({
+    params: { domain },
     props: {
-      tag,
-      filteredProjects: projects.filter((p: any) => p.tags?.includes(tag)),
+      domain,
+      filteredProjects: projects.filter((p: any) => p.domain === domain),
       filteredPosts: posts
-        .filter((p: any) => p.tags?.includes(tag))
+        .filter((p: any) => p.domain === domain)
         .sort((a: any, b: any) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()),
     },
   }));
 }
 
-const { tag, filteredProjects, filteredPosts } = Astro.props;
+const { domain, filteredProjects, filteredPosts } = Astro.props;
 const total = filteredProjects.length + filteredPosts.length;
 ---
 
-<BaseLayout pageTitle={`#${tag}`} description={`Content tagged with ${tag}`}>
+<BaseLayout pageTitle={`${domain}`} description={`Content in the ${domain} domain`}>
   <div class="page-header">
-    <h1><span class="text-muted" style="font-weight: 400;">#</span>{tag}</h1>
-    <p>{total} {total === 1 ? 'item' : 'items'} tagged with <strong style="color: var(--text-primary);">{tag}</strong></p>
+    <h1>{domain}</h1>
+    <p>{total} {total === 1 ? 'item' : 'items'} in <strong style="color: var(--text-primary);">{domain}</strong></p>
   </div>
 
   {filteredProjects.length > 0 && (
@@ -51,7 +51,8 @@ const total = filteredProjects.length + filteredPosts.length;
           <ProjectCard
             title={project.title}
             description={project.description}
-            tags={project.tags}
+            domain={project.domain}
+            stack={project.stack}
             slug={project.slug}
             featured={project.featured}
             link={project.link}
@@ -70,7 +71,8 @@ const total = filteredProjects.length + filteredPosts.length;
             title={post.title}
             description={post.description}
             pubDate={post.pubDate}
-            tags={post.tags}
+            domain={post.domain}
+            stack={post.stack}
             slug={post.slug}
             author={post.author}
           />

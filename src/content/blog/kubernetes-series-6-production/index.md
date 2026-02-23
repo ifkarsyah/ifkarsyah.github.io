@@ -3,7 +3,8 @@ title: "Kubernetes Series, Part 6: Production Operations"
 description: "Resource quotas, autoscaling (HPA/KEDA), monitoring with Prometheus and Grafana, and cluster cost management for data platforms."
 pubDate: 2026-02-22
 author: "ifkarsyah"
-tags: ["Kubernetes", "Data Engineering", "DevOps"]
+domain: "Infrastructure"
+stack: ["Kubernetes"]
 ---
 
 ## Resource Quotas and LimitRanges

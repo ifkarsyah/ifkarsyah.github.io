@@ -3,7 +3,8 @@ title: "Kafka Series, Part 1: Topics, Partitions & Offsets"
 description: "The core data model behind Kafka — how topics are structured, why partitions matter, and how offsets track consumer position."
 pubDate: 2024-04-14
 author: "ifkarsyah"
-tags: ["Kafka", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Kafka"]
 image:
   src: ./kafka-series.png
   alt: "Apache Kafka Topics Partitions Offsets"

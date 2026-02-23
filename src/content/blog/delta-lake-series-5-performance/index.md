@@ -3,7 +3,8 @@ title: "Delta Lake Series, Part 5: Performance Optimization"
 description: "Making Delta Lake queries fast — OPTIMIZE, Z-ordering, data skipping with column statistics, compaction, and partitioning strategies."
 pubDate: 2024-09-08
 author: "ifkarsyah"
-tags: ["Delta Lake", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Delta Lake", "Spark"]
 image:
   src: ./delta-lake-series.png
   alt: "Delta Lake Performance Optimization"

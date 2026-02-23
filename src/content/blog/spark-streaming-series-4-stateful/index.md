@@ -3,7 +3,8 @@ title: "Spark Streaming Series, Part 4: Stateful Processing"
 description: "Per-key state tracking across events, timeouts, and RocksDB state stores for complex streaming logic."
 pubDate: 2024-03-31
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Spark"]
 image:
   src: ./spark-streaming-series.png
   alt: "Apache Spark Stateful Processing"

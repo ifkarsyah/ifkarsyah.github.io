@@ -3,7 +3,8 @@ title: "Databricks Series, Part 5: Machine Learning with MLflow"
 description: "Tracking experiments, logging models and artifacts, comparing runs, and managing the model lifecycle with MLflow on Databricks."
 pubDate: 2024-11-10
 author: "ifkarsyah"
-tags: ["Databricks", "Data Engineering", "MLOps"]
+domain: "Data Engineering"
+stack: ["Databricks", "Delta Lake"]
 image:
   src: ./databricks-series.png
   alt: "Databricks MLflow"

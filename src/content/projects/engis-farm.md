@@ -2,7 +2,8 @@
 title: "Engis Farm — Farming Simulation Game"
 description: "A Harvest Moon-inspired farming simulation game built with Java and Swing, where players manage livestock, clear land, and produce goods."
 date: 2019-04-15
-tags: ["Java", "Swing", "Game", "OOP"]
+domain: "Frontend"
+stack: ["React", "TypeScript", "Vite"]
 link: "https://github.com/ifkarsyah/engis-farm"
 image: ""
 featured: false

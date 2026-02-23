@@ -3,7 +3,8 @@ title: "Spark Streaming Series, Part 5: Operations and Tuning"
 description: "Checkpointing, fault tolerance, exactly-once semantics, monitoring, and production performance tuning."
 pubDate: 2024-04-07
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Spark"]
 image:
   src: ./spark-streaming-series.png
   alt: "Apache Spark Streaming Operations and Tuning"

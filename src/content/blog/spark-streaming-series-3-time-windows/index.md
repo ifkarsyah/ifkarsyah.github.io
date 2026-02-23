@@ -3,7 +3,8 @@ title: "Spark Streaming Series, Part 3: Time, Watermarks, and Windows"
 description: "Event time vs processing time, watermarks to handle late data, and window types for time-based aggregations."
 pubDate: 2024-03-24
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Spark"]
 image:
   src: ./spark-streaming-series.png
   alt: "Apache Spark Streaming Time and Windows"

@@ -3,7 +3,8 @@ title: "Claude Code Series, Part 6: Best Practices & Real-world Tips"
 description: "Master Claude Code with effective prompting, context management, and workflow patterns."
 pubDate: 2026-02-28
 author: "ifkarsyah"
-tags: ["Claude Code", "AI", "Developer Tools"]
+domain: "AI Engineering"
+stack: ["Claude Code"]
 ---
 
 ## When to Use Claude Code (and When Not To)

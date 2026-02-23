@@ -3,7 +3,8 @@ title: "Iceberg Series, Part 3: Catalogs"
 description: "How Hive, Glue, REST, and Nessie catalogs coordinate multi-engine access to Iceberg tables — and why the catalog abstraction is Iceberg's biggest differentiator."
 pubDate: 2024-10-27
 author: "ifkarsyah"
-tags: ["Iceberg", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Apache Iceberg"]
 image:
   src: ./iceberg-series.png
   alt: "Apache Iceberg Catalogs"

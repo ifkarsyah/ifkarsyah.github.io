@@ -3,7 +3,8 @@ title: "Claude Code Series, Part 2: Hooks — Automate Workflows"
 description: "Use hooks to automate code formatting, block edits to protected files, get notified when Claude needs input, and enforce project rules."
 pubDate: 2026-02-24
 author: "ifkarsyah"
-tags: ["Claude Code", "AI", "Developer Tools", "Automation"]
+domain: "AI Engineering"
+stack: ["Claude Code"]
 ---
 
 ## What Are Hooks?

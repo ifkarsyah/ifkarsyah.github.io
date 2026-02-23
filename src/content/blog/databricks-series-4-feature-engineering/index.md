@@ -3,7 +3,8 @@ title: "Databricks Series, Part 4: Feature Engineering at Scale"
 description: "Databricks Feature Store, FeatureEngineeringClient, FeatureLookup, training sets, and eliminating training-serving skew."
 pubDate: 2024-11-03
 author: "ifkarsyah"
-tags: ["Databricks", "Data Engineering", "MLOps"]
+domain: "Data Engineering"
+stack: ["Databricks", "Delta Lake"]
 image:
   src: ./databricks-series.png
   alt: "Databricks Feature Engineering"

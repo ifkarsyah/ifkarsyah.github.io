@@ -2,7 +2,8 @@
 title: "Lakehouse Platform"
 description: "A self-service data lakehouse built on Databricks and Delta Lake, unifying batch and streaming workloads with a single storage layer."
 date: 2023-09-10
-tags: ["Spark", "Databricks", "Delta Lake", "Python", "Airflow"]
+domain: "Data Engineering"
+stack: ["Spark", "Databricks", "Delta Lake", "Airflow"]
 link: "https://github.com/ifkarsyah/lakehouse-platform"
 image: ""
 featured: true

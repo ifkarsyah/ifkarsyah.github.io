@@ -3,7 +3,8 @@ title: "Claude Code Series, Part 3: Custom Commands & Slash Prompts"
 description: "Extend Claude Code with CLAUDE.md, slash commands, hooks, and automation."
 pubDate: 2026-02-25
 author: "ifkarsyah"
-tags: ["Claude Code", "AI", "Developer Tools"]
+domain: "AI Engineering"
+stack: ["Claude Code"]
 ---
 
 ## CLAUDE.md: Project-Level Instructions

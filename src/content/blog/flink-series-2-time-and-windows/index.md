@@ -3,7 +3,8 @@ title: "Flink Series, Part 2: Time & Windows"
 description: "Flink's most powerful feature — temporal reasoning over streams. Event time, watermarks, and window types explained."
 pubDate: 2024-02-18
 author: "ifkarsyah"
-tags: ["Flink", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Flink"]
 image:
   src: ./flink-series.png
   alt: "Apache Flink Time and Windows"

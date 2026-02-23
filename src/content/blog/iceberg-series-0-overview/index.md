@@ -3,7 +3,8 @@ title: "Iceberg Series, Part 0: Overview"
 description: "What is Apache Iceberg, how does it differ from Delta Lake and Hudi, and why multi-engine interoperability is its defining advantage."
 pubDate: 2024-10-06
 author: "ifkarsyah"
-tags: ["Iceberg", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Apache Iceberg"]
 image:
   src: ./iceberg-series.png
   alt: "Apache Iceberg Overview"

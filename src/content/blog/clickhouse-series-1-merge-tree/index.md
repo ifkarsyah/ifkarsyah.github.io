@@ -3,7 +3,8 @@ title: "ClickHouse Series, Part 1: MergeTree Engines"
 description: "The storage engine family at the heart of ClickHouse — MergeTree and its specialized variants for deduplication, aggregation, and updates."
 pubDate: 2024-06-09
 author: "ifkarsyah"
-tags: ["ClickHouse", "SQL", "Data Engineering"]
+domain: "Analytics"
+stack: ["ClickHouse"]
 image:
   src: ./clickhouse-series.png
   alt: "ClickHouse MergeTree Engines"

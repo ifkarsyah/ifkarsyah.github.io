@@ -3,7 +3,8 @@ title: "Flink Series, Part 3: State Management"
 description: "How Flink stores and manages state — keyed vs operator state, state backends, TTL, and practical stateful patterns."
 pubDate: 2024-02-25
 author: "ifkarsyah"
-tags: ["Flink", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Flink"]
 image:
   src: ./flink-series.png
   alt: "Apache Flink State Management"

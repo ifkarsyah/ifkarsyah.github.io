@@ -2,7 +2,8 @@
 title: "Dotfiles — Personal Dev Environment Config"
 description: "Personal dotfiles managed with GNU Stow, covering zsh, vim, VSCode, git, SSH, Docker, and macOS package management via Brewfile."
 date: 2025-10-19
-tags: ["Shell", "Dotfiles", "macOS", "Zsh", "Vim"]
+domain: "Backend"
+stack: ["Rust"]
 link: "https://github.com/ifkarsyah/dotfiles"
 image: ""
 featured: false

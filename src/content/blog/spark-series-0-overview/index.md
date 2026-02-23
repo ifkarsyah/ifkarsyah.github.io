@@ -3,7 +3,8 @@ title: "Spark Series, Part 0: Overview"
 description: "A high-level introduction to Apache Spark — what it is, why it exists, and where it fits in the modern data stack."
 pubDate: 2024-01-07
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Big Data"]
+domain: "Data Engineering"
+stack: ["Spark"]
 image:
   src: ./spark-series.png
   alt: "Apache Spark"

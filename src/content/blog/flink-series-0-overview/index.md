@@ -3,7 +3,8 @@ title: "Flink Series, Part 0: Overview"
 description: "What is Apache Flink, what problem does it solve, and how does it differ from Spark Streaming? A roadmap for the series."
 pubDate: 2024-02-04
 author: "ifkarsyah"
-tags: ["Flink", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Flink"]
 image:
   src: ./flink-series.png
   alt: "Apache Flink Overview"

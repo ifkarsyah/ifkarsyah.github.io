@@ -3,7 +3,8 @@ title: "Databricks Series, Part 3: Data Ingestion with Auto Loader"
 description: "cloudFiles format, schema inference, schema evolution, and building robust incremental ingestion pipelines on Databricks."
 pubDate: 2024-10-27
 author: "ifkarsyah"
-tags: ["Databricks", "Data Engineering", "MLOps"]
+domain: "Data Engineering"
+stack: ["Databricks", "Delta Lake"]
 image:
   src: ./databricks-series.png
   alt: "Databricks Auto Loader"

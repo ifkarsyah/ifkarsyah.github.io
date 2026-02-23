@@ -3,7 +3,8 @@ title: "Kafka Series, Part 5: Kafka Connect"
 description: "Moving data in and out of Kafka without writing custom code — connectors, transforms, and running Connect in production."
 pubDate: 2024-05-12
 author: "ifkarsyah"
-tags: ["Kafka", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Kafka"]
 image:
   src: ./kafka-series.png
   alt: "Apache Kafka Connect"

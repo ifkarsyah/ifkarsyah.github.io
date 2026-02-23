@@ -10,7 +10,8 @@ interface Props {
     description: string;
     pubDate: string;
     author?: string;
-    tags: string[];
+    domain?: string;
+    stack?: string[];
     image?: { src: ImageMetadata; alt: string };
   };
 }
@@ -34,7 +35,7 @@ const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('en-US', 
       </div>
       <h1>{frontmatter.title}</h1>
       <p class="post-description">{frontmatter.description}</p>
-      <TagList tags={frontmatter.tags} />
+      {(frontmatter.domain || frontmatter.stack?.length) && <TagList domain={frontmatter.domain} stack={frontmatter.stack} />}
     </header>
 
     {frontmatter.image && (
@@ -49,7 +50,7 @@ const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('en-US', 
 
     <div style="margin-top: 2.5rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
       <a href="/blog/" class="btn btn-outline">← Back to Blog</a>
-      <TagList tags={frontmatter.tags} />
+      {(frontmatter.domain || frontmatter.stack?.length) && <TagList domain={frontmatter.domain} stack={frontmatter.stack} />}
     </div>
   </article>
 </BaseLayout>

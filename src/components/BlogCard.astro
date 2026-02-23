@@ -6,13 +6,14 @@ interface Props {
   title: string;
   description: string;
   pubDate: string | Date;
-  tags: string[];
+  domain: string;
+  stack: string[];
   slug: string;
   author?: string;
   image?: { src: ImageMetadata; alt: string };
 }
 
-const { title, description, pubDate, tags, slug, author, image } = Astro.props;
+const { title, description, pubDate, domain, stack, slug, author, image } = Astro.props;
 
 const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
   year: 'numeric',
@@ -31,8 +32,9 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
   <p class="card-description">{description}</p>
   <div class="card-footer">
     <div class="tags">
-      {tags.slice(0, 3).map(tag => (
-        <span class="tag">{tag}</span>
+      <span class="tag domain">{domain}</span>
+      {stack.slice(0, 2).map(item => (
+        <span class="tag stack">{item}</span>
       ))}
     </div>
     <span class="card-link-icon">→</span>

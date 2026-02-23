@@ -2,7 +2,8 @@
 title: "Kadita — Config-Driven Data Ingestion Platform"
 description: "A Kubernetes-inspired YAML-configured data platform that ingests from Postgres, MySQL, MongoDB, Jira, Zendesk, and S3 into an Apache Iceberg data lake."
 date: 2025-09-22
-tags: ["Apache Iceberg", "S3", "Data Lake", "YAML", "Python"]
+domain: "Data Lake"
+stack: ["Apache Iceberg", "S3", "Python"]
 link: "https://github.com/ifkarsyah/kadita"
 image: ""
 featured: false

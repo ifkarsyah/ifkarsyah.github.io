@@ -3,7 +3,8 @@ title: "Flink Series, Part 5: Performance & Production"
 description: "Making Flink production-ready — diagnosing backpressure, tuning parallelism, sizing network buffers, and monitoring with metrics."
 pubDate: 2024-03-10
 author: "ifkarsyah"
-tags: ["Flink", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Flink"]
 image:
   src: ./flink-series.png
   alt: "Apache Flink Performance and Production"

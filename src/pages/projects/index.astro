@@ -12,7 +12,8 @@ const projects = Object.entries(projectFiles)
   }))
   .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-const allTags = [...new Set(projects.flatMap((p: any) => p.tags ?? []))].sort() as string[];
+const allDomains = [...new Set(projects.map((p: any) => p.domain ?? ''))].filter(d => d).sort() as string[];
+const allStacks = [...new Set(projects.flatMap((p: any) => p.stack ?? []))].sort() as string[];
 const allYears = [...new Set(projects.map((p: any) => String(new Date(p.date).getFullYear())))].sort((a, b) => Number(b) - Number(a)) as string[];
 ---
 
@@ -22,15 +23,16 @@ const allYears = [...new Set(projects.map((p: any) => String(new Date(p.date).ge
     <p>Things I've built — from open source libraries to production services.</p>
   </div>
 
-  <FilterBar tags={allTags} years={allYears} />
+  <FilterBar domains={allDomains} stacks={allStacks} years={allYears} />
 
   <div class="cards-grid">
     {projects.map((project: any) => (
-      <div class="card-item" data-tags={(project.tags ?? []).join(',')} data-year={String(new Date(project.date).getFullYear())}>
+      <div class="card-item" data-domain={project.domain} data-stack={(project.stack ?? []).join(',')} data-year={String(new Date(project.date).getFullYear())}>
         <ProjectCard
           title={project.title}
           description={project.description}
-          tags={project.tags}
+          domain={project.domain}
+          stack={project.stack}
           slug={project.slug}
           featured={project.featured}
           link={project.link}

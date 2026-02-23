@@ -3,7 +3,8 @@ title: "Iceberg Series, Part 4: Hidden Partitioning & Evolution"
 description: "Partition transforms that derive partition values automatically, partition evolution that changes strategy without rewriting data, and why these are Iceberg's biggest ergonomic wins."
 pubDate: 2024-11-03
 author: "ifkarsyah"
-tags: ["Iceberg", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Apache Iceberg"]
 image:
   src: ./iceberg-series.png
   alt: "Apache Iceberg Hidden Partitioning and Evolution"

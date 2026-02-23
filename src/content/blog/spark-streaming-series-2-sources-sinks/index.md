@@ -3,7 +3,8 @@ title: "Spark Streaming Series, Part 2: Sources and Sinks"
 description: "Reading from Kafka and files, writing to Delta Lake and databases — the connectors that power real-time pipelines."
 pubDate: 2024-03-17
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Spark"]
 image:
   src: ./spark-streaming-series.png
   alt: "Apache Spark Streaming Sources and Sinks"

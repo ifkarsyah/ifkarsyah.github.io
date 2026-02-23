@@ -3,7 +3,8 @@ title: "Databricks Series, Part 0: Overview"
 description: "The lakehouse platform concept, what Databricks adds on top of Spark and Delta Lake, and how it compares to alternatives."
 pubDate: 2024-10-06
 author: "ifkarsyah"
-tags: ["Databricks", "Data Engineering", "MLOps"]
+domain: "Data Engineering"
+stack: ["Databricks", "Delta Lake"]
 image:
   src: ./databricks-series.png
   alt: "Databricks Overview"

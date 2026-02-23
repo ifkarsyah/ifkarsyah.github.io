@@ -3,7 +3,8 @@ title: "ClickHouse Series, Part 3: Data Ingestion"
 description: "Getting data into ClickHouse efficiently — batch inserts, async inserts, the Kafka table engine, S3 integration, and ingestion best practices."
 pubDate: 2024-06-23
 author: "ifkarsyah"
-tags: ["ClickHouse", "SQL", "Data Engineering"]
+domain: "Analytics"
+stack: ["ClickHouse"]
 image:
   src: ./clickhouse-series.png
   alt: "ClickHouse Data Ingestion"

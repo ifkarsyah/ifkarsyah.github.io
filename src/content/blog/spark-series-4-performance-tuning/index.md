@@ -3,7 +3,8 @@ title: "Spark Series, Part 4: Performance Tuning"
 description: "Making Spark jobs fast — partitioning, shuffles, skew, caching, and the most common bottlenecks in production."
 pubDate: 2024-02-04
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Performance", "Big Data"]
+domain: "Data Engineering"
+stack: ["Spark"]
 image:
   src: ./spark-series.png
   alt: "Apache Spark Performance Tuning"

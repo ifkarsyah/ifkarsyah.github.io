@@ -3,7 +3,8 @@ title: "Kubernetes Series, Part 3: Workload Patterns for Data Engineering"
 description: "StatefulSets, Jobs, CronJobs, and DaemonSets — the right workload type for each data engineering use case."
 pubDate: 2026-02-22
 author: "ifkarsyah"
-tags: ["Kubernetes", "Data Engineering", "DevOps"]
+domain: "Infrastructure"
+stack: ["Kubernetes"]
 ---
 
 ## The Four Workload Types

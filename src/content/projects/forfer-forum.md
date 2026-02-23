@@ -2,7 +2,8 @@
 title: "Forfer Forum — Django Discussion Platform"
 description: "A typical web forum built with Django and JavaScript, featuring threaded discussions, user accounts, and post management."
 date: 2019-03-24
-tags: ["Django", "Python", "JavaScript", "Web"]
+domain: "Frontend"
+stack: ["React", "TypeScript", "Vite"]
 link: "https://github.com/ifkarsyah/forfer-forum"
 image: ""
 featured: false

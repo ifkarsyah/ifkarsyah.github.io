@@ -3,7 +3,8 @@ title: "Iceberg Series, Part 2: Table Format Internals"
 description: "The four-layer metadata hierarchy — table metadata, manifest lists, manifest files, and data files — and how it enables efficient scans and snapshot isolation."
 pubDate: 2024-10-20
 author: "ifkarsyah"
-tags: ["Iceberg", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Apache Iceberg"]
 image:
   src: ./iceberg-series.png
   alt: "Apache Iceberg Table Format Internals"

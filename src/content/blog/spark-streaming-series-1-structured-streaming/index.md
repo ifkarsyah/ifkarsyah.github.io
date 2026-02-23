@@ -3,7 +3,8 @@ title: "Spark Streaming Series, Part 1: Structured Streaming Fundamentals"
 description: "The unbounded table model — how Spark Streaming treats streams as infinite DataFrames, with output modes, triggers, and writing."
 pubDate: 2024-03-10
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Spark"]
 image:
   src: ./spark-streaming-series.png
   alt: "Apache Spark Structured Streaming"

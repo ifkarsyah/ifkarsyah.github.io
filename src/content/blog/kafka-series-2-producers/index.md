@@ -3,7 +3,8 @@ title: "Kafka Series, Part 2: Producers"
 description: "Writing to Kafka reliably — the producer API, batching, compression, delivery guarantees, and idempotent producers."
 pubDate: 2024-04-21
 author: "ifkarsyah"
-tags: ["Kafka", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Kafka"]
 image:
   src: ./kafka-series.png
   alt: "Apache Kafka Producers"

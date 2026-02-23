@@ -3,7 +3,8 @@ title: "How Flink's Exactly-Once Semantics Actually Work"
 description: "A deep dive into Flink's checkpointing mechanism and how it guarantees exactly-once processing even when jobs fail and restart."
 pubDate: 2023-11-20
 author: "ifkarsyah"
-tags: ["Apache Flink", "Streaming", "Data Platform"]
+domain: "Streaming"
+stack: ["Flink"]
 image:
   src: ./flink.png
   alt: "Apache Flink"

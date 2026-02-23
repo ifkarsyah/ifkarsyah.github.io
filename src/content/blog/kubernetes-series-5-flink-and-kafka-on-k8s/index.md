@@ -3,7 +3,8 @@ title: "Kubernetes Series, Part 5: Running Flink and Kafka on Kubernetes"
 description: "Deploying Flink with the Flink Kubernetes Operator and Kafka with Strimzi — the streaming stack on K8s."
 pubDate: 2026-02-22
 author: "ifkarsyah"
-tags: ["Kubernetes", "Data Engineering", "DevOps"]
+domain: "Infrastructure"
+stack: ["Kubernetes"]
 ---
 
 ## Two Operators, One Streaming Platform

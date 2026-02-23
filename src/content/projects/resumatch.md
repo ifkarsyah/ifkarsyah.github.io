@@ -2,7 +2,8 @@
 title: "Resumatch — Resume & Job Matching Pipeline"
 description: "A three-stage Rust CLI pipeline that scrapes job postings, parses PDF resumes, and identifies skill gaps between a resume and a job description."
 date: 2024-10-24
-tags: ["Rust", "CLI", "PDF Parsing", "Web Scraping"]
+domain: "Frontend"
+stack: ["React", "TypeScript", "Vite"]
 link: "https://github.com/ifkarsyah/resumatch"
 image: ""
 featured: false

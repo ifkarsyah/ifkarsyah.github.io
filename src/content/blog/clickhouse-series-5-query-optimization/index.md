@@ -3,7 +3,8 @@ title: "ClickHouse Series, Part 5: Query Optimization"
 description: "Making ClickHouse queries faster — profiling with system.query_log, projections, query patterns, and what actually moves the needle."
 pubDate: 2024-07-07
 author: "ifkarsyah"
-tags: ["ClickHouse", "SQL", "Data Engineering"]
+domain: "Analytics"
+stack: ["ClickHouse"]
 image:
   src: ./clickhouse-series.png
   alt: "ClickHouse Query Optimization"

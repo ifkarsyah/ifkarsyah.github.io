@@ -9,7 +9,8 @@ const postEntries = await getCollection('blog');
 const posts = postEntries
   .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 
-const allTags = [...new Set(posts.flatMap(p => p.data.tags ?? []))].sort() as string[];
+const allDomains = [...new Set(posts.map(p => p.data.domain ?? ''))].filter(d => d).sort() as string[];
+const allStacks = [...new Set(posts.flatMap(p => p.data.stack ?? []))].sort() as string[];
 const allYears = [...new Set(posts.map(p => String(new Date(p.data.pubDate).getFullYear())))].sort((a, b) => Number(b) - Number(a)) as string[];
 ---
 
@@ -19,16 +20,17 @@ const allYears = [...new Set(posts.map(p => String(new Date(p.data.pubDate).getF
     <p>Writing about data platform, distributed systems, and machine learning.</p>
   </div>
 
-  <FilterBar tags={allTags} years={allYears} />
+  <FilterBar domains={allDomains} stacks={allStacks} years={allYears} />
 
   <div class="cards-grid">
     {posts.map(post => (
-      <div class="card-item" data-tags={(post.data.tags ?? []).join(',')} data-year={String(new Date(post.data.pubDate).getFullYear())}>
+      <div class="card-item" data-domain={post.data.domain} data-stack={(post.data.stack ?? []).join(',')} data-year={String(new Date(post.data.pubDate).getFullYear())}>
         <BlogCard
           title={post.data.title}
           description={post.data.description}
           pubDate={post.data.pubDate}
-          tags={post.data.tags}
+          domain={post.data.domain}
+          stack={post.data.stack}
           slug={post.id.replace('/index.md', '')}
           image={post.data.image}
         />

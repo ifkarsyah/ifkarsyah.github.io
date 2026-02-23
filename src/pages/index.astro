@@ -74,7 +74,8 @@ const recentPosts = Object.entries(postFiles)
           <ProjectCard
             title={project.title}
             description={project.description}
-            tags={project.tags}
+            domain={project.domain}
+            stack={project.stack}
             slug={project.slug}
             featured={project.featured}
             link={project.link}
@@ -97,7 +98,8 @@ const recentPosts = Object.entries(postFiles)
             title={post.title}
             description={post.description}
             pubDate={post.pubDate}
-            tags={post.tags}
+            domain={post.domain}
+            stack={post.stack}
             slug={post.slug}
             author={post.author}
           />

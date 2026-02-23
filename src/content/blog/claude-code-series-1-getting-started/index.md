@@ -3,7 +3,8 @@ title: "Claude Code Series, Part 1: Getting Started"
 description: "Installation, API setup, and your first Claude Code commands."
 pubDate: 2026-02-23
 author: "ifkarsyah"
-tags: ["Claude Code", "AI", "Developer Tools"]
+domain: "AI Engineering"
+stack: ["Claude Code"]
 ---
 
 ## Installation

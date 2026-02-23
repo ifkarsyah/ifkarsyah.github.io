@@ -3,7 +3,8 @@ title: "ClickHouse Series, Part 0: Overview"
 description: "What is ClickHouse, how does columnar storage work, and when should you use it? A roadmap for the series."
 pubDate: 2024-06-02
 author: "ifkarsyah"
-tags: ["ClickHouse", "SQL", "Data Engineering"]
+domain: "Analytics"
+stack: ["ClickHouse"]
 image:
   src: ./clickhouse-series.png
   alt: "ClickHouse Overview"

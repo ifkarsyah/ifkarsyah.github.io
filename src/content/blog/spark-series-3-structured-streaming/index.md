@@ -3,7 +3,8 @@ title: "Spark Series, Part 3: Structured Streaming"
 description: "Real-time data processing with Spark Structured Streaming — micro-batches, triggers, watermarks, and output modes."
 pubDate: 2024-01-28
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Streaming", "Big Data"]
+domain: "Data Engineering"
+stack: ["Spark"]
 image:
   src: ./spark-series.png
   alt: "Apache Spark Structured Streaming"

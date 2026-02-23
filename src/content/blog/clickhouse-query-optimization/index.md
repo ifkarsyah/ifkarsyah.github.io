@@ -3,7 +3,8 @@ title: "ClickHouse Query Optimization: What Actually Moves the Needle"
 description: "Practical techniques for speeding up analytical queries in ClickHouse — from table design to materialized views and query profiling."
 pubDate: 2024-01-10
 author: "ifkarsyah"
-tags: ["ClickHouse", "SQL", "Data Platform"]
+domain: "Analytics"
+stack: ["ClickHouse", "SQL"]
 image:
   src: ./clickhouse.png
   alt: "ClickHouse"

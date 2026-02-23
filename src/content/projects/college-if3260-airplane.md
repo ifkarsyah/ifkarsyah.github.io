@@ -2,7 +2,8 @@
 title: "3D Airplane — WebGL Computer Graphics"
 description: "An interactive 3D airplane model rendered with WebGL from scratch for the IF3260 Computer Graphics course at ITB."
 date: 2021-01-01
-tags: ["WebGL", "JavaScript", "3D Graphics", "Computer Graphics"]
+domain: "Frontend"
+stack: ["WebGL", "JavaScript"]
 link: "https://github.com/ifkarsyah/College-IF3260-Tubes-Airplane"
 image: ""
 featured: false

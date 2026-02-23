@@ -1,16 +1,22 @@
 ---
 interface Props {
-  tags: string[];
+  domain?: string;
+  stack?: string[];
   linkable?: boolean;
 }
 
-const { tags, linkable = true } = Astro.props;
+const { domain, stack = [], linkable = true } = Astro.props;
 ---
 
 <div class="tags">
-  {tags.map(tag =>
+  {domain && (
     linkable
-      ? <a href={`/tags/${tag}`} class="tag">{tag}</a>
-      : <span class="tag">{tag}</span>
+      ? <a href={`/domain/${domain}`} class="tag domain">{domain}</a>
+      : <span class="tag domain">{domain}</span>
+  )}
+  {stack.map(item =>
+    linkable
+      ? <a href={`/stack/${item}`} class="tag stack">{item}</a>
+      : <span class="tag stack">{item}</span>
   )}
 </div>

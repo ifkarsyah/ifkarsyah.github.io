@@ -3,7 +3,8 @@ title: "Delta Lake Series, Part 6: Streaming & CDC"
 description: "Writing to Delta with Structured Streaming, exactly-once guarantees, reading Delta as a stream, and Change Data Feed for downstream propagation."
 pubDate: 2024-09-15
 author: "ifkarsyah"
-tags: ["Delta Lake", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Delta Lake", "Spark"]
 image:
   src: ./delta-lake-series.png
   alt: "Delta Lake Streaming and CDC"

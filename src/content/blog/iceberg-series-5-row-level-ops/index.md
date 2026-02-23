@@ -3,7 +3,8 @@ title: "Iceberg Series, Part 5: Row-Level Operations"
 description: "How MERGE, UPDATE, and DELETE work in Iceberg — copy-on-write vs merge-on-read, when to use each, and the performance trade-offs."
 pubDate: 2024-11-10
 author: "ifkarsyah"
-tags: ["Iceberg", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Apache Iceberg"]
 image:
   src: ./iceberg-series.png
   alt: "Apache Iceberg Row-Level Operations"

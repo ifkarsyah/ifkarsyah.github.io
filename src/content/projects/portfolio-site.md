@@ -2,7 +2,8 @@
 title: "This Portfolio Site"
 description: "Personal portfolio website built with Astro, featuring a dark theme, project showcase, and blog."
 date: 2024-02-01
-tags: ["Astro", "TypeScript", "CSS"]
+domain: "Frontend"
+stack: ["React", "TypeScript", "Tailwind CSS", "Vite"]
 link: "https://github.com/ifkarsyah/ifkarsyah-me"
 image: ""
 featured: false

@@ -2,7 +2,8 @@
 title: "Data Engineering Garden — Knowledge Base"
 description: "A public digital garden of data engineering notes, concepts, and guides — built with Quartz v4 and published as a static site."
 date: 2024-09-10
-tags: ["Data Engineering", "Digital Garden", "Quartz", "TypeScript"]
+domain: "Data Engineering"
+stack: ["Spark", "SQL"]
 link: "https://github.com/ifkarsyah/data-engineering-garden"
 image: ""
 featured: false

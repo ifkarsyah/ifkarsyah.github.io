@@ -2,7 +2,8 @@
 title: "ClickHouse Analytics Platform"
 description: "A multi-tenant OLAP analytics platform on ClickHouse, serving sub-second queries on billions of rows for product and business dashboards."
 date: 2023-05-20
-tags: ["ClickHouse", "Python", "SQL", "Kubernetes"]
+domain: "Analytics"
+stack: ["ClickHouse", "SQL", "Kubernetes"]
 link: "https://github.com/ifkarsyah/clickhouse-platform"
 image: ""
 featured: false

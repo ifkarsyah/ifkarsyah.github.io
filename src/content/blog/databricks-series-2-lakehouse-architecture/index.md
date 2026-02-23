@@ -3,7 +3,8 @@ title: "Databricks Series, Part 2: Lakehouse Architecture"
 description: "Unity Catalog for governance and discovery, the medallion Bronze/Silver/Gold pattern, and Delta tables as the storage foundation."
 pubDate: 2024-10-20
 author: "ifkarsyah"
-tags: ["Databricks", "Data Engineering", "MLOps"]
+domain: "Data Engineering"
+stack: ["Databricks", "Delta Lake"]
 image:
   src: ./databricks-series.png
   alt: "Databricks Lakehouse Architecture"

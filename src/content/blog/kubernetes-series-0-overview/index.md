@@ -3,7 +3,8 @@ title: "Kubernetes Series, Part 0: Overview"
 description: "What is Kubernetes, what problem it solves over bare metal and Docker, and a roadmap for running data workloads on K8s."
 pubDate: 2026-02-22
 author: "ifkarsyah"
-tags: ["Kubernetes", "Data Engineering", "DevOps"]
+domain: "Infrastructure"
+stack: ["Kubernetes"]
 ---
 
 ## What Is Kubernetes?

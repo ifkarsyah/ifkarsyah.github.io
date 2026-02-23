@@ -2,7 +2,8 @@
 title: "Langkah — AI Travel Blog & Planner"
 description: "A travel platform combining curated first-hand blog content organized by region, country, and city with an AI-powered itinerary planner chatbot."
 date: 2025-01-01
-tags: ["React", "TypeScript", "Tailwind CSS", "AI", "Vite"]
+domain: "AI Engineering"
+stack: ["Python"]
 link: "https://langkah.vercel.app/"
 image: ""
 featured: true

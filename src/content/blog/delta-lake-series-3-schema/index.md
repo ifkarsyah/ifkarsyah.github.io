@@ -3,7 +3,8 @@ title: "Delta Lake Series, Part 3: Schema Enforcement & Evolution"
 description: "How Delta Lake validates schemas on write, rejects incompatible data, and handles controlled schema changes over time."
 pubDate: 2024-08-25
 author: "ifkarsyah"
-tags: ["Delta Lake", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Delta Lake", "Spark"]
 image:
   src: ./delta-lake-series.png
   alt: "Delta Lake Schema Enforcement and Evolution"

@@ -1,20 +1,32 @@
 ---
 interface Props {
-  tags: string[];
+  domains: string[];
+  stacks: string[];
   years: string[];
 }
 
-const { tags, years } = Astro.props;
+const { domains, stacks, years } = Astro.props;
 ---
 
 <div class="filter-bar">
-  {tags.length > 0 && (
+  {domains.length > 0 && (
     <div class="filter-group">
-      <span class="filter-label">Tag</span>
-      <div class="filter-buttons" data-filter-group="tag">
+      <span class="filter-label">Domain</span>
+      <div class="filter-buttons" data-filter-group="domain">
         <button class="filter-btn active" data-value="">All</button>
-        {tags.map(tag => (
-          <button class="filter-btn" data-value={tag}>{tag}</button>
+        {domains.map(domain => (
+          <button class="filter-btn" data-value={domain}>{domain}</button>
+        ))}
+      </div>
+    </div>
+  )}
+  {stacks.length > 0 && (
+    <div class="filter-group">
+      <span class="filter-label">Stack</span>
+      <div class="filter-buttons" data-filter-group="stack">
+        <button class="filter-btn active" data-value="">All</button>
+        {stacks.map(stack => (
+          <button class="filter-btn" data-value={stack}>{stack}</button>
         ))}
       </div>
     </div>
@@ -33,25 +45,37 @@ const { tags, years } = Astro.props;
 </div>
 
 <script>
-  let activeTag = '';
+  let activeDomain = '';
+  let activeStack = '';
   let activeYear = '';
 
   function updateCards() {
     const cards = document.querySelectorAll<HTMLElement>('.card-item');
     cards.forEach(card => {
-      const cardTags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+      const cardDomain = card.dataset.domain ?? '';
+      const cardStacks = card.dataset.stack ? card.dataset.stack.split(',') : [];
       const cardYear = card.dataset.year ?? '';
-      const tagMatch = !activeTag || cardTags.includes(activeTag);
+      const domainMatch = !activeDomain || cardDomain === activeDomain;
+      const stackMatch = !activeStack || cardStacks.includes(activeStack);
       const yearMatch = !activeYear || cardYear === activeYear;
-      card.style.display = tagMatch && yearMatch ? '' : 'none';
+      card.style.display = domainMatch && stackMatch && yearMatch ? '' : 'none';
     });
   }
 
-  document.querySelectorAll<HTMLButtonElement>('[data-filter-group="tag"] .filter-btn').forEach(btn => {
+  document.querySelectorAll<HTMLButtonElement>('[data-filter-group="domain"] .filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('[data-filter-group="tag"] .filter-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('[data-filter-group="domain"] .filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      activeTag = btn.dataset.value ?? '';
+      activeDomain = btn.dataset.value ?? '';
+      updateCards();
+    });
+  });
+
+  document.querySelectorAll<HTMLButtonElement>('[data-filter-group="stack"] .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-filter-group="stack"] .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeStack = btn.dataset.value ?? '';
       updateCards();
     });
   });

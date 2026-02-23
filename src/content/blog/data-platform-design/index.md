@@ -3,7 +3,8 @@ title: "Designing a Data Platform That Doesn't Rot"
 description: "Lessons from building internal data platforms: what makes them last, what kills them, and the principles I try to apply."
 pubDate: 2023-08-05
 author: "ifkarsyah"
-tags: ["Data Platform", "Infrastructure", "Architecture"]
+domain: "Data Engineering"
+stack: []
 image:
   src: ./data-platform.png
   alt: "Data Platform"

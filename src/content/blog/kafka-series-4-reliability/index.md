@@ -3,7 +3,8 @@ title: "Kafka Series, Part 4: Reliability & Operations"
 description: "Replication, in-sync replicas, durability guarantees, and operational concerns for running Kafka in production."
 pubDate: 2024-05-05
 author: "ifkarsyah"
-tags: ["Kafka", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Kafka"]
 image:
   src: ./kafka-series.png
   alt: "Apache Kafka Reliability and Operations"

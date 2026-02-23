@@ -3,7 +3,8 @@ title: "Kubernetes Series, Part 4: Running Spark on Kubernetes"
 description: "Submitting Spark jobs natively to K8s, the Spark Operator, executor resource sizing, and shuffle storage."
 pubDate: 2026-02-22
 author: "ifkarsyah"
-tags: ["Kubernetes", "Data Engineering", "DevOps"]
+domain: "Infrastructure"
+stack: ["Kubernetes"]
 ---
 
 ## Spark's Kubernetes Support: A Brief History

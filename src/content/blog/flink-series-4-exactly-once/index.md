@@ -3,7 +3,8 @@ title: "Flink Series, Part 4: Exactly-Once & Checkpointing"
 description: "How Flink guarantees end-to-end correctness after failures — Chandy-Lamport barriers, two-phase commit, checkpoints vs savepoints."
 pubDate: 2024-03-03
 author: "ifkarsyah"
-tags: ["Flink", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Flink"]
 image:
   src: ./flink-series.png
   alt: "Apache Flink Exactly-Once Checkpointing"

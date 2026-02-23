@@ -2,7 +2,8 @@
 title: "Clickstreamer — Real-time Clickstream Pipeline"
 description: "End-to-end clickstream analytics pipeline using Kafka, Apache Flink, ClickHouse, and Grafana with a full Docker Compose setup."
 date: 2024-08-07
-tags: ["Kafka", "Apache Flink", "ClickHouse", "Grafana", "Docker"]
+domain: "Streaming"
+stack: ["Kafka", "Flink", "ClickHouse", "Grafana"]
 link: "https://github.com/ifkarsyah/clickstreamer"
 image: ""
 featured: false

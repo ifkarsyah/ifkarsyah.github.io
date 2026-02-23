@@ -2,7 +2,8 @@
 title: "Inbox Lens — AI Email Analysis Tool"
 description: "An AI-powered tool for analyzing and surfacing insights from email inboxes — summarizing threads, identifying action items, and categorizing messages."
 date: 2024-01-01
-tags: ["AI", "Python", "Email"]
+domain: "Frontend"
+stack: ["React", "TypeScript", "Vite"]
 link: "https://github.com/ifkarsyah/inbox-lens"
 image: ""
 featured: false

@@ -3,7 +3,8 @@ title: "Spark Series, Part 2: DataFrames and Spark SQL"
 description: "The practical Spark API — working with structured data using DataFrames, schemas, and SQL queries."
 pubDate: 2024-01-21
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Big Data"]
+domain: "Data Engineering"
+stack: ["Spark"]
 image:
   src: ./spark-series.png
   alt: "Apache Spark DataFrames"

@@ -3,7 +3,8 @@ title: "Claude Code Series, Part 0: Overview"
 description: "An introduction to Claude Code and how it differs from GitHub Copilot and Cursor."
 pubDate: 2026-02-22
 author: "ifkarsyah"
-tags: ["Claude Code", "AI", "Developer Tools"]
+domain: "AI Engineering"
+stack: ["Claude Code"]
 ---
 
 ## What is Claude Code?

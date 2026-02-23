@@ -3,7 +3,8 @@ title: "Delta Lake Series, Part 0: Overview"
 description: "The data lake reliability problem, what Delta Lake adds on top of Parquet, and how it compares to Apache Iceberg and Apache Hudi."
 pubDate: 2024-08-04
 author: "ifkarsyah"
-tags: ["Delta Lake", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Delta Lake", "Spark"]
 image:
   src: ./delta-lake-series.png
   alt: "Delta Lake Overview"

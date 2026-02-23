@@ -3,7 +3,8 @@ title: "Kubernetes Series, Part 2: Storage and Configuration"
 description: "PersistentVolumes, PersistentVolumeClaims, StorageClasses, Secrets, and ConfigMaps — how stateful data workloads survive pod restarts."
 pubDate: 2026-02-22
 author: "ifkarsyah"
-tags: ["Kubernetes", "Data Engineering", "DevOps"]
+domain: "Infrastructure"
+stack: ["Kubernetes"]
 ---
 
 ## Why Storage Is Hard in Kubernetes

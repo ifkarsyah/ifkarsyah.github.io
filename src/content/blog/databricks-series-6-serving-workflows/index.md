@@ -3,7 +3,8 @@ title: "Databricks Series, Part 6: ML Serving and Workflows"
 description: "Batch and real-time model inference, Databricks Model Serving endpoints, and orchestrating the full ML pipeline with Databricks Workflows."
 pubDate: 2024-11-17
 author: "ifkarsyah"
-tags: ["Databricks", "Data Engineering", "MLOps"]
+domain: "Data Engineering"
+stack: ["Databricks", "Delta Lake"]
 image:
   src: ./databricks-series.png
   alt: "Databricks ML Serving and Workflows"

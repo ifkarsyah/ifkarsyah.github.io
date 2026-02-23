@@ -2,7 +2,8 @@
 title: "Real-time Ingestion Pipeline"
 description: "A high-throughput streaming ingestion platform built with Apache Flink and Kafka, processing 500k+ events/sec into ClickHouse."
 date: 2024-01-15
-tags: ["Apache Flink", "Kafka", "ClickHouse", "Python", "Kubernetes"]
+domain: "Streaming"
+stack: ["Kafka", "Flink", "ClickHouse"]
 link: "https://github.com/ifkarsyah/realtime-ingestion"
 image: ""
 featured: true

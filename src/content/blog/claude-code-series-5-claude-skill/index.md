@@ -3,7 +3,8 @@ title: "Claude Code Series, Part 5: Building Claude Skills"
 description: "Create reusable, shareable automation with Claude Skills."
 pubDate: 2026-02-27
 author: "ifkarsyah"
-tags: ["Claude Code", "AI", "Developer Tools"]
+domain: "AI Engineering"
+stack: ["Claude Code"]
 ---
 
 ## What Are Claude Skills?

@@ -3,7 +3,8 @@ title: "Spark Series, Part 1: RDDs and the Execution Model"
 description: "Understanding Resilient Distributed Datasets — the foundation of Spark's execution model, transformations, actions, and lazy evaluation."
 pubDate: 2024-01-14
 author: "ifkarsyah"
-tags: ["Spark", "Data Engineering", "Big Data"]
+domain: "Data Engineering"
+stack: ["Spark"]
 image:
   src: ./spark-series.png
   alt: "Apache Spark RDDs"

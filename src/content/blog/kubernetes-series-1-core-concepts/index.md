@@ -3,7 +3,8 @@ title: "Kubernetes Series, Part 1: Core Concepts"
 description: "Pods, Deployments, Services, ConfigMaps, and Namespaces — the essential vocabulary every K8s user must know."
 pubDate: 2026-02-22
 author: "ifkarsyah"
-tags: ["Kubernetes", "Data Engineering", "DevOps"]
+domain: "Infrastructure"
+stack: ["Kubernetes"]
 ---
 
 ## The Pod: Kubernetes' Atomic Unit

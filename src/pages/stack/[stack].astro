@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import BlogCard from '../../components/BlogCard.astro';
+
+export async function getStaticPaths() {
+  const projectFiles = import.meta.glob('../../content/projects/*.md', { eager: true });
+  const postFiles = import.meta.glob('../../content/blog/**/index.md', { eager: true });
+
+  const projects = Object.entries(projectFiles).map(([path, mod]: [string, any]) => ({
+    ...mod.frontmatter,
+    slug: path.split('/').pop()!.replace('.md', ''),
+  }));
+
+  const posts = Object.entries(postFiles).map(([path, mod]: [string, any]) => ({
+    ...mod.frontmatter,
+    slug: path.split('/').slice(-2, -1)[0],
+  }));
+
+  const projectStacks = projects.flatMap((p: any) => p.stack ?? []);
+  const postStacks = posts.flatMap((p: any) => p.stack ?? []);
+  const uniqueStacks = [...new Set([...projectStacks, ...postStacks])];
+
+  return uniqueStacks.map(stack => ({
+    params: { stack },
+    props: {
+      stack,
+      filteredProjects: projects.filter((p: any) => p.stack?.includes(stack)),
+      filteredPosts: posts
+        .filter((p: any) => p.stack?.includes(stack))
+        .sort((a: any, b: any) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()),
+    },
+  }));
+}
+
+const { stack, filteredProjects, filteredPosts } = Astro.props;
+const total = filteredProjects.length + filteredPosts.length;
+---
+
+<BaseLayout pageTitle={`${stack}`} description={`Content using ${stack}`}>
+  <div class="page-header">
+    <h1>{stack}</h1>
+    <p>{total} {total === 1 ? 'item' : 'items'} using <strong style="color: var(--text-primary);">{stack}</strong></p>
+  </div>
+
+  {filteredProjects.length > 0 && (
+    <section class="section">
+      <p class="section-title">Projects</p>
+      <div class="cards-grid">
+        {filteredProjects.map((project: any) => (
+          <ProjectCard
+            title={project.title}
+            description={project.description}
+            domain={project.domain}
+            stack={project.stack}
+            slug={project.slug}
+            featured={project.featured}
+            link={project.link}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {filteredPosts.length > 0 && (
+    <section class="section">
+      <p class="section-title">Blog Posts</p>
+      <div class="cards-grid">
+        {filteredPosts.map((post: any) => (
+          <BlogCard
+            title={post.title}
+            description={post.description}
+            pubDate={post.pubDate}
+            domain={post.domain}
+            stack={post.stack}
+            slug={post.slug}
+            author={post.author}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+</BaseLayout>

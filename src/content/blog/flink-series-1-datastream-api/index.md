@@ -3,7 +3,8 @@ title: "Flink Series, Part 1: DataStream API"
 description: "The fundamental building block of Flink — how to read, transform, and write streams using the DataStream API."
 pubDate: 2024-02-11
 author: "ifkarsyah"
-tags: ["Flink", "Data Engineering", "Streaming"]
+domain: "Streaming"
+stack: ["Flink"]
 image:
   src: ./flink-series.png
   alt: "Apache Flink DataStream API"

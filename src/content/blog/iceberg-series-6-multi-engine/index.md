@@ -3,7 +3,8 @@ title: "Iceberg Series, Part 6: Multi-Engine & Maintenance"
 description: "Querying Iceberg from Trino, Flink, and DuckDB; expiring snapshots; rewriting data files; and keeping Iceberg tables healthy in production."
 pubDate: 2024-11-17
 author: "ifkarsyah"
-tags: ["Iceberg", "Data Engineering", "Data Lake"]
+domain: "Data Lake"
+stack: ["Apache Iceberg"]
 image:
   src: ./iceberg-series.png
   alt: "Apache Iceberg Multi-Engine and Maintenance"

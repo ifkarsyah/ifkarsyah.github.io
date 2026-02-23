@@ -2,7 +2,8 @@
 title: "Kanjigen — Kanji Learning Roadmap Generator"
 description: "A Jupyter Notebook tool that generates optimal learning roadmaps for a given kanji list, ordering characters by component dependencies."
 date: 2021-03-27
-tags: ["Python", "Jupyter Notebook", "NLP", "Japanese"]
+domain: "Frontend"
+stack: ["WebGL", "JavaScript"]
 link: "https://github.com/ifkarsyah/kanjigen"
 image: ""
 featured: false

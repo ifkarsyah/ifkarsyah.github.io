@@ -3,7 +3,8 @@ title: "Databricks Series, Part 1: Getting Started"
 description: "Navigating the Databricks workspace, launching clusters, writing notebooks, and submitting your first PySpark job."
 pubDate: 2024-10-13
 author: "ifkarsyah"
-tags: ["Databricks", "Data Engineering", "MLOps"]
+domain: "Data Engineering"
+stack: ["Databricks", "Delta Lake"]
 image:
   src: ./databricks-series.png
   alt: "Databricks Getting Started"
