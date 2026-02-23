@@ -409,4 +409,4 @@ Now you understand how PostgreSQL chooses execution plans. But even the best pla
 
 ---
 
-**Part 4 complete. Next: [Memory & BufferPool](../postgres-internals-series-5-buffer-pool/)**
+**Part 4 complete. Next: [Memory & BufferPool](/blog/postgres-internals-series-5-buffer-pool/)**

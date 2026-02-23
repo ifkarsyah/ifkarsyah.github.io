@@ -422,4 +422,4 @@ You've learned how PostgreSQL writes durably, survives crashes, and replicates t
 
 ---
 
-**Part 6 complete. Next: [Connection Management & Process Model](../postgres-internals-series-7-connections-processes/)**
+**Part 6 complete. Next: [Connection Management & Process Model](/blog/postgres-internals-series-7-connections-processes/)**

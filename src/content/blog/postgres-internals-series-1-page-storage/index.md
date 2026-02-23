@@ -277,4 +277,4 @@ This is **MVCC** — multi-version concurrency control. Every tuple carries visi
 
 ---
 
-**Part 1 complete. Next: [Transaction Isolation & MVCC](../postgres-internals-series-2-mvcc-transactions/)**
+**Part 1 complete. Next: [Transaction Isolation & MVCC](/blog/postgres-internals-series-2-mvcc-transactions/)**

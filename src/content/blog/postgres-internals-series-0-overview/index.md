@@ -146,4 +146,4 @@ Ready to go deep? Let's start with storage.
 
 ---
 
-**Part 0 complete. Next: [Page Layout & Storage](../postgres-internals-series-1-page-storage/)**
+**Part 0 complete. Next: [Page Layout & Storage](/blog/postgres-internals-series-1-page-storage/)**

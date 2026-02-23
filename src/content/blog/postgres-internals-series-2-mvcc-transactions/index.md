@@ -315,4 +315,4 @@ This decision is made by the **query planner**, but first it must understand wha
 
 ---
 
-**Part 2 complete. Next: [Indexes & B-Trees](../postgres-internals-series-3-indexes-btree/)**
+**Part 2 complete. Next: [Indexes & B-Trees](/blog/postgres-internals-series-3-indexes-btree/)**

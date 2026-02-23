@@ -415,4 +415,4 @@ Memory management keeps data accessible. But what guarantees that data survives 
 
 ---
 
-**Part 5 complete. Next: [Write-Ahead Logging & Replication](../postgres-internals-series-6-wal-replication/)**
+**Part 5 complete. Next: [Write-Ahead Logging & Replication](/blog/postgres-internals-series-6-wal-replication/)**

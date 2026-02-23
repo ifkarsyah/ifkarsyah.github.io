@@ -362,4 +362,4 @@ Indexes exist to make queries fast. But the **planner** decides whether to use t
 
 ---
 
-**Part 3 complete. Next: [Query Planning & Optimization](../postgres-internals-series-4-query-planning/)**
+**Part 3 complete. Next: [Query Planning & Optimization](/blog/postgres-internals-series-4-query-planning/)**
