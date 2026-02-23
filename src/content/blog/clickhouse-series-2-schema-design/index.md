@@ -3,7 +3,7 @@ title: "ClickHouse Series, Part 2: Schema Design"
 description: "Choosing the right data types, ORDER BY key, partitioning strategy, and TTL — the decisions that determine query performance before a single query runs."
 pubDate: 2024-06-16
 author: "ifkarsyah"
-domain: "Analytics"
+domain: "Database"
 stack: ["ClickHouse"]
 image:
   src: ./clickhouse-series.png
