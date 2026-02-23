@@ -171,4 +171,4 @@ Never set retention below the longest running transaction in your cluster — a 
 - **Optimistic concurrency** lets parallel writers proceed without locking; conflicts are detected at commit time
 - **VACUUM** physically deletes removed files; keep retention ≥ 7 days to preserve time travel
 
-Next: Schema Enforcement & Evolution — how Delta Lake validates schemas on write and handles controlled changes over time.
+**Next:** [Schema Evolution](/blog/delta-lake-series-3-schema)

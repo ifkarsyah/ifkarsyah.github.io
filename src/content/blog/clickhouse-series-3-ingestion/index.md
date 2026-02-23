@@ -195,4 +195,4 @@ SET insert_deduplicate = 1;
 - **S3 integration** supports ad-hoc queries on object storage and bulk historical loads
 - Monitor `system.parts` to detect when insert rate is outpacing the merge process
 
-Next: Internals — how ClickHouse actually stores data as parts, runs background merges, and builds indexes.
+**Next:** [Internals — how ClickHouse actually stores data as parts, runs background merges, and builds indexes](/blog/clickhouse-series-4-internals)

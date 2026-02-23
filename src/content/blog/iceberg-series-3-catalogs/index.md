@@ -175,4 +175,4 @@ For new production deployments:
 - **REST Catalog** is the emerging standard — portable, OAuth2-secured, and implemented by Polaris, S3 Tables, Unity Catalog
 - **Nessie** adds git-like branching — create isolated catalog branches for ETL testing and safe deployments
 
-Next: Hidden Partitioning & Evolution — how Iceberg's partition transforms and partition evolution work, and why they eliminate a whole class of data engineering pain.
+**Next:** [Partitioning](/blog/iceberg-series-4-partitioning)

@@ -183,4 +183,4 @@ Writes go to the Distributed table and are forwarded to the appropriate shard. R
 - Merges apply engine logic (deduplication, aggregation, TTL) and must keep pace with inserts
 - **Distributed tables** fan out queries across shards; the sharding key determines data locality
 
-Next: Query Optimization — profiling slow queries, projections, and design patterns for sub-second analytics.
+**Next:** [Query Optimization — profiling slow queries, projections, and design patterns for sub-second analytics](/blog/clickhouse-series-5-query-optimization)

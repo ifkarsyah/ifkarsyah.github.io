@@ -207,4 +207,4 @@ SETTINGS index_granularity = 8192;
 - Partition by time (`toYYYYMM`) for easy data lifecycle management; avoid over-partitioning
 - Use `TTL` to automate data expiration and tiered storage migration
 
-Next: Data Ingestion — getting data into ClickHouse efficiently at scale.
+**Next:** [Data Ingestion — getting data into ClickHouse efficiently at scale](/blog/clickhouse-series-3-ingestion)

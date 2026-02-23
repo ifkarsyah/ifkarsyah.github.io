@@ -145,4 +145,4 @@ min.cleanable.dirty.ratio=0.5
 - Monitor **under-replicated partitions** and **consumer group lag** as primary health signals
 - Partition count can be increased but never decreased — plan ahead
 
-Next: Kafka Connect — moving data in and out of Kafka without writing custom producer/consumer code.
+**Next:** [Kafka Connect](/blog/kafka-series-5-kafka-connect)

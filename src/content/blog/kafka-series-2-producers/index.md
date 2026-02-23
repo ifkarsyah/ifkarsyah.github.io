@@ -154,4 +154,4 @@ Records inside a transaction are invisible to consumers with `isolation.level=re
 - **Idempotent producers** (`enable_idempotence=True`) prevent duplicates from retries
 - **Transactions** enable atomic writes across multiple partitions and topics
 
-Next: Consumers & Consumer Groups — reading from Kafka at scale, with partition assignment, offset commits, and rebalancing.
+**Next:** [Consumers & Consumer Groups](/blog/kafka-series-3-consumers)

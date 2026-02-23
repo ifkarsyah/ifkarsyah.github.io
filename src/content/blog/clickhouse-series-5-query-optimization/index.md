@@ -192,4 +192,4 @@ The standalone post [ClickHouse Query Optimization: What Actually Moves the Need
 - Prefer `uniq()` over `count(distinct)`, `quantile()` over `ORDER BY + LIMIT`, and `PREWHERE` for selective filters
 - Use `SAMPLE` for exploratory queries on large tables — fast and approximately correct
 
-Next: Materialized Views & Operations — pre-aggregation patterns, replication, sharding, and keeping ClickHouse healthy.
+**Next:** [Materialized Views & Operations — pre-aggregation patterns, replication, sharding, and keeping ClickHouse healthy](/blog/clickhouse-series-6-materialized-views)

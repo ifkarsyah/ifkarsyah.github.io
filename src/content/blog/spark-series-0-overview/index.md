@@ -72,3 +72,5 @@ This series assumes you are comfortable with:
 - A general sense of what distributed systems are
 
 You do not need to have used Spark before. That is the point.
+
+**Next:** [RDDs](/blog/spark-series-1-rdds)

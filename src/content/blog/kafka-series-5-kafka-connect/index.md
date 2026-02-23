@@ -174,4 +174,4 @@ Most connectors are open source (Debezium, Apache Kafka project). Some are avail
 - Use **Schema Registry** with Avro/Protobuf for schema validation and evolution
 - Debezium connectors enable **Change Data Capture** from relational databases — a powerful pattern for building event-driven systems from existing databases
 
-Next: Kafka Streams — building stateful stream processing applications natively inside Kafka.
+**Next:** [Kafka Streams](/blog/kafka-series-6)

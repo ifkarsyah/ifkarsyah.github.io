@@ -114,3 +114,5 @@ To get the most from this series:
 - **Python or Scala** — examples will be in PySpark
 
 You do not need to have used Spark Streaming before. That is the point.
+
+**Next:** [Structured Streaming](/blog/spark-streaming-series-1-structured-streaming)

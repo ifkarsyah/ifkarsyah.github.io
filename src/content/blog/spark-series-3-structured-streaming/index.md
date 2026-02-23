@@ -154,4 +154,4 @@ Never share checkpoint directories between different queries. Each query needs i
 - Always set watermarks for time-window aggregations to bound state size
 - Checkpointing is required for fault tolerance and exactly-once delivery
 
-Next: the final part — performance tuning and the most common Spark bottlenecks.
+**Next:** [Performance Tuning](/blog/spark-series-4)

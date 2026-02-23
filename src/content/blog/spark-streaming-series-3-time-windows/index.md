@@ -233,4 +233,4 @@ This is why choosing the watermark correctly matters.
 - Tumbling windows for non-overlapping periods, sliding for fine-grained trends, session windows for user behavior
 - Always use watermarks with windowed aggregations — without them, state grows unbounded
 
-Next: Stateful Processing — tracking per-key state (sessions, counters, complex state machines) across events.
+**Next:** [Stateful Operations](/blog/spark-streaming-series-4-stateful)

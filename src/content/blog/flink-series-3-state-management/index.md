@@ -168,4 +168,4 @@ This pattern — state + timers — is the foundation of most complex stream pro
 - Configure **TTL** to prevent unbounded state growth
 - Timers (registered via `TimerService`) enable time-based state eviction and session patterns
 
-Next: Exactly-Once & Checkpointing — how Flink guarantees correctness after failures.
+**Next:** [Exactly Once & Checkpointing](/blog/flink-series-4-exactly-once)

@@ -315,4 +315,4 @@ Run this and every 30 seconds, new events from Kafka are parsed, transformed, an
 - Delta Lake provides ACID, time travel, and schema enforcement — use it for production
 - Check for checkpoint locations; every writeStream must have one
 
-Next: Time, Watermarks, and Windows — how to compute aggregations over time windows and handle late-arriving data.
+**Next:** [Time Windows](/blog/spark-streaming-series-3-time-windows)

@@ -199,4 +199,4 @@ spark.sql("SHOW TBLPROPERTIES events").show(truncate=False)
 - **Column mapping** enables rename and drop without rewriting Parquet files
 - **CHECK constraints** and **NOT NULL** enforce data quality rules at the storage layer
 
-Next: Time Travel & Versioning — querying historical snapshots, rolling back bad writes, and managing retention.
+**Next:** [Time Travel](/blog/delta-lake-series-4-time-travel)

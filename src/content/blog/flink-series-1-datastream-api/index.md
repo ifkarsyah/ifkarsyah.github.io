@@ -174,4 +174,4 @@ stream.sink_to(sink)
 - Operator chaining fuses consecutive narrow transformations for efficiency
 - The execution is lazy — the graph is built first, then optimized and executed
 
-Next: Time & Windows — how Flink reasons about time and groups events into finite sets for aggregation.
+**Next:** [Time & Windows](/blog/flink-series-2-time-and-windows)

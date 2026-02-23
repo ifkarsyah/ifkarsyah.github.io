@@ -222,4 +222,4 @@ delta_table.vacuum(retentionHours=1)  # do not do this in production
 - **Change Data Feed** exposes row-level changes (`insert`, `update`, `delete`) between versions
 - **VACUUM** physically deletes old files; keep retention ≥ 7 days, never shorter than your longest-running job
 
-Next: Performance Optimization — OPTIMIZE, Z-ordering, data skipping, and partitioning strategies for fast queries.
+**Next:** [Performance Optimization](/blog/delta-lake-series-5-performance)

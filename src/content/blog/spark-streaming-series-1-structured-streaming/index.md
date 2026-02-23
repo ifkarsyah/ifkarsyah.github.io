@@ -243,4 +243,4 @@ Run this and every 10 seconds you see the updated event counts.
 - Triggers (processingTime, availableNow) control when micro-batches are processed
 - A complete streaming query is: source → transformations → output mode → trigger → start
 
-Next: Sources and Sinks — how to read from Kafka and other sources, and where to write results.
+**Next:** [Sources & Sinks](/blog/spark-streaming-series-2-sources-sinks)

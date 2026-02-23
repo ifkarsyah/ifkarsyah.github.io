@@ -120,4 +120,4 @@ The set of in-sync replicas (**ISR**) tracks which followers are caught up with 
 - **Offsets** are how consumers track their position; stored in `__consumer_offsets`
 - Set **retention** by time or size; use **log compaction** for changelog-style topics
 
-Next: Producers — how to write records to Kafka reliably, with batching, compression, and delivery guarantees.
+**Next:** [Producers](/blog/kafka-series-2-producers)

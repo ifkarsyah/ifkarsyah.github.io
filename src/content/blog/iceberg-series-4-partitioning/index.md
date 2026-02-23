@@ -208,4 +208,4 @@ Hidden partitioning and partition evolution eliminate two of the most painful da
 - **Partition evolution** changes the partitioning strategy without rewriting data — old and new files coexist with different specs
 - Iceberg tracks the sort order of data files, enabling fine-grained skipping inside files
 
-Next: Row-Level Operations — how MERGE, UPDATE, and DELETE are implemented with copy-on-write and merge-on-read, and the performance trade-offs between them.
+**Next:** [Row-Level CRUD](/blog/iceberg-series-5-row-level-ops)

@@ -194,4 +194,4 @@ This gives fast individual DELETE/UPDATE (MOR) while keeping MERGE reads clean (
 - **MERGE** is fully supported; use partition predicates to limit scan scope and improve performance
 - MOR tables need periodic `rewriteDataFiles` compaction — covered in Part 6
 
-Next: Multi-Engine & Maintenance — querying Iceberg from Trino, Flink, and DuckDB; expiring snapshots; and compacting data files.
+**Next:** [Multi-Engine Analytics](/blog/iceberg-series-6)

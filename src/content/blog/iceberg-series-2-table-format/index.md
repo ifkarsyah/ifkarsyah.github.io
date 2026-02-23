@@ -162,4 +162,4 @@ When reading, the engine applies delete files on top of data files. This is the 
 - Manifests are **shared across snapshots** — appends only add new manifests, making snapshots cheap
 - **Delete files** (Iceberg v2) record row deletions without rewriting data files — the basis for merge-on-read
 
-Next: Catalogs — how Hive, Glue, REST, and Nessie catalogs coordinate multi-engine access to the same Iceberg tables.
+**Next:** [Catalogs](/blog/iceberg-series-3-catalogs)

@@ -175,4 +175,4 @@ The ZooKeeper/Keeper path and replica name are the only additions — the rest o
 - `CollapsingMergeTree` enables updates and deletes via signed rows
 - All engines have a `Replicated` variant for HA deployments
 
-Next: Schema Design — choosing the right data types, ORDER BY key, partitioning strategy, and TTL.
+**Next:** [Schema Design — choosing the right data types, ORDER BY key, partitioning strategy, and TTL](/blog/clickhouse-series-2-schema-design)

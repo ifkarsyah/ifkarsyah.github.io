@@ -146,4 +146,4 @@ Partitioning is critical for query performance downstream. Choose partition colu
 - The DataFrame API and Spark SQL are equivalent; pick the one that's clearer
 - Partition output data on columns your consumers filter on
 
-Next: Structured Streaming — applying the same DataFrame API to real-time data.
+**Next:** [Structured Streaming](/blog/spark-series-3-structured-streaming)

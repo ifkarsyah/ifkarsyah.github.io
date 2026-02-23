@@ -205,4 +205,4 @@ DESCRIBE DETAIL events;
 - Every write creates a JSON commit file in `_delta_log/` — the complete history of the table
 - `DeltaTable.history()` shows every operation ever performed on the table
 
-Next: Transaction Log & ACID — how the log enables atomicity, isolation between concurrent writers, and conflict resolution.
+**Next:** [The Transaction Log](/blog/delta-lake-series-2-transaction-log)

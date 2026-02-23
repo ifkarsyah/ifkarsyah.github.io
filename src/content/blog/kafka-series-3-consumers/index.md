@@ -162,4 +162,4 @@ If your processing per batch is slow, increase `max_poll_interval_ms` rather tha
 - **Manual offset commits** give you at-least-once delivery; auto-commit is simpler but less precise
 - Keep `poll()` calls frequent to avoid session timeouts and unwanted rebalances
 
-Next: Reliability & Operations — replication, durability guarantees, and keeping Kafka healthy in production.
+**Next:** [Reliability & Operations](/blog/kafka-series-4-reliability)

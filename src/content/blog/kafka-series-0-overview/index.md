@@ -87,4 +87,4 @@ This series builds up from the fundamentals to production-grade Kafka usage:
 - Kafka retains data on disk and supports **replay** — consumers can re-read past events
 - Use Kafka for high-throughput streaming, fan-out, and decoupling; use simpler queues for task dispatch
 
-Next: Topics, Partitions & Offsets — the fundamental data model that makes Kafka work.
+**Next:** [Topics, Partitions & Offsets](/blog/kafka-series-1-topics-partitions)

@@ -111,4 +111,4 @@ rdd.unpersist()
 - Shuffles are expensive — stage boundaries and performance bottlenecks cluster around them
 - Cache RDDs you reuse; don't cache RDDs you use once
 
-Next up: DataFrames — the higher-level API that you will use for 95% of real work.
+**Next:** [DataFrames & SQL](/blog/spark-series-2-dataframes)

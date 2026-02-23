@@ -312,4 +312,4 @@ This tracks login/logout pairs per user and emits a session record when a user l
 - State is stored in RocksDB (by default) and is recoverable via checkpoints
 - For simple aggregations, windows are easier; for complex logic, use stateful operations
 
-Next: Operations and Tuning — checkpointing, fault tolerance, monitoring, and production performance.
+**Next:** [Operations & Troubleshooting](/blog/spark-streaming-series-5)

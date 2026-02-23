@@ -91,3 +91,5 @@ This series assumes:
 - Familiarity with distributed systems concepts (partitioning, fault tolerance)
 
 You do not need prior Flink experience. That is what this series is for.
+
+**Next:** [The DataStream API](/blog/flink-series-1-datastream-api)

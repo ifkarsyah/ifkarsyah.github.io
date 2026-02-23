@@ -201,4 +201,4 @@ Aim for average file sizes of 128 MB – 1 GB. Many files below 10 MB indicate a
 - **Liquid Clustering** (Delta 3.1+) replaces Z-ordering with incremental maintenance — prefer it for new tables
 - On Databricks, `autoOptimize` eliminates the need for scheduled compaction jobs
 
-Next: Streaming & CDC — Structured Streaming writes to Delta, exactly-once guarantees, and Change Data Feed for downstream propagation.
+**Next:** [Streaming with Delta](/blog/delta-lake-series-6-streaming)

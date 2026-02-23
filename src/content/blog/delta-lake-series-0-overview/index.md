@@ -104,4 +104,4 @@ Delta Lake is not a query engine. It does not replace Spark, Trino, or DuckDB â€
 - It provides ACID transactions, time travel, schema enforcement, and scalable metadata
 - Delta Lake, Iceberg, and Hudi solve the same problem; Delta Lake has the largest Spark/Databricks ecosystem
 
-Next: Getting Started â€” creating your first Delta table, reading and writing with Spark, and what the transaction log looks like in practice.
+**Next:** [Getting Started](/blog/delta-lake-series-1-getting-started)

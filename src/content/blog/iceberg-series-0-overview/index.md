@@ -112,4 +112,4 @@ Catalogs are covered in Part 3. The main options: Hive Metastore, AWS Glue, Iceb
 - **Hidden partitioning** and **partition evolution** are unique advantages over Delta Lake
 - AWS defaults to Iceberg (Glue, Athena, S3 Tables); Azure defaults to Delta (Fabric)
 
-Next: Getting Started — creating your first Iceberg table with Spark, reading and writing, and time travel in practice.
+**Next:** [Getting Started](/blog/iceberg-series-1-getting-started)

@@ -132,4 +132,4 @@ This post builds on the standalone deep-dive [How Flink's Exactly-Once Semantics
 - **Savepoints** are manually-triggered snapshots for operational use: upgrades, rescaling, migration
 - Tune checkpoint interval based on recovery time requirements vs. overhead tolerance
 
-Next: Performance & Production — backpressure, parallelism tuning, and making Flink operationally reliable.
+**Next:** [Performance Tuning](/blog/flink-series-5)

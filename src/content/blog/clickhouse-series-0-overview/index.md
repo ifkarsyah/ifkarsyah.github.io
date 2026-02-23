@@ -105,4 +105,4 @@ ClickHouse is a poor fit for:
 - A cluster is organized as **shards** (horizontal partitions) and **replicas** (copies for fault tolerance)
 - Use ClickHouse for product analytics, log analytics, time-series, and real-time dashboards
 
-Next: MergeTree Engines — the storage engine family that makes ClickHouse work, and which variant to reach for.
+**Next:** [MergeTree Engines — the storage engine family that makes ClickHouse work, and which variant to reach for](/blog/clickhouse-series-1-merge-tree)

@@ -152,4 +152,4 @@ late_stream.print()  # log or reprocess late arrivals
 - `ReduceFunction` is memory-efficient; `ProcessWindowFunction` is expressive
 - Handle late data with `.allowed_lateness()` and side outputs
 
-Next: State Management — how Flink stores and manages state across events, and how that state survives failures.
+**Next:** [State Management](/blog/flink-series-3-state-management)

@@ -223,4 +223,4 @@ Unlike Delta Lake, Iceberg supports column renames and drops as pure metadata op
 - Schema evolution (add, rename, drop, widen) is always metadata-only — Iceberg tracks columns by ID, not name
 - Iceberg metadata tables (`.snapshots`, `.files`, `.partitions`) are directly queryable with SQL
 
-Next: Table Format Internals — the four-layer file hierarchy of snapshots, manifest lists, and manifest files that makes Iceberg's metadata model unique.
+**Next:** [Table Format & Metadata](/blog/iceberg-series-2-table-format)
